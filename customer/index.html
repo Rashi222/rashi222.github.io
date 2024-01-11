@@ -157,10 +157,68 @@
 <hr />
 <h2 id="onboarding">Onboarding</h2>
 <hr />
-<h4 id="sign-in"><strong>Sign In</strong></h4>
+<h3 id="sign-in"><strong>Sign In</strong></h3>
+<ul>
+<li>As an admin, will be able to sign into the portal using email address and password.</li>
+<li>By default, Customer dashboard will be selected.</li>
+<li>To show the field is active and cursor is placed on the field, placeholder would be in blue color, otherwise in grey color.</li>
+<li>For Customer, Select the customer dashboard</li>
+<li>Enter the valid email and password and click on sign in, you'll be logged into the portal</li>
+<li>If the mail entered is of incorrect format or is left blank, will throw a validation message "Email is required and must be of valid format"</li>
+<li>If the password field is left blank and clicked on sign, will throw a validation error message as "Password is required"</li>
+<li>If wrong email or password is entered, will throw the notification as "Invalid email or password. Also, ensure the correct dashboard is selected"
+<img alt="Alt text" src="../image-65.png" /></li>
+</ul>
 <h4 id="forgot-password"><strong>Forgot Password</strong></h4>
+<ul>
+<li>As you click on the forgot password button, will redirect you the screen to enter the email address in order to receive the reset password email.</li>
+<li>To show the field is active and cursor is placed on the field, placeholder would be in blue color, otherwise in grey color.</li>
+<li>Send rest link button would be disable until a valid email address is entered.</li>
+<li>If the email entered exists in the database, the send rest link button would get activated. With a success notification of "Reset Password link sent to your  email", it would redirect us to sign in page.</li>
+<li>When you enter the wrong email address or leave the field blank, will show a validation error as "Email not found. Please enter a valid email." </li>
+</ul>
+<p><img alt="Alt text" src="../image-63.png" /></p>
 <h4 id="reset-password"><strong>Reset Password</strong></h4>
-<hr />
+<ul>
+<li>
+<p>Below is the email template with the link to reset your password
+        From: QHL Support
+        Subject: Reset Password</p>
+<pre><code>Hi [user's first name],
+
+Please use the link below to reset the password for your account.
+
+Click here to reset your password
+*Link access will expire in 48 hours.
+
+Thanks
+Quick Hands Logistics"
+</code></pre>
+</li>
+<li>
+<p>The link is valid for 48 hours</p>
+</li>
+<li>Password should follow the format of minimum 8 characters that includes 1 Uppercase, 1 Lowercase, 1 Special Character, 1 Number, else will throw a validation message</li>
+<li>Reset button will be disable until the information is entered</li>
+<li>Will throw a validation error message if the passwords do not match</li>
+<li>If click on cancel button, will redirect you back to the sign in page</li>
+<li>To show the field is active and cursor is placed on the field, placeholder would be in blue color, otherwise in grey color.</li>
+<li>As you click on reset button, will throw a success notification "Password has been updated" and redirect you to the sign in page.</li>
+<li>Below is the template user receives when they set their password<pre><code>From: QHL Support
+Subject: Password Updated
+
+Hi [user's first name],
+
+Your password has been successfully updated!
+
+(link to home page of sing-in page here)
+
+Thanks,
+Quick Handgs Logistics"
+</code></pre>
+<p><img alt="Alt text" src="../image-64.png" /></p>
+</li>
+</ul>
 <h2 id="user-profile"><strong>User Profile</strong></h2>
 <p>As the Customer clicks on the profile icon on the top, detail information related to the logged in user would appear such as user name and password which can be further viewed and updated.</p>
 <p><a href="https://quickhands-admin-frontend.vercel.app/admin/dashboard/list-view">QHL logo</a> will be visible on the top and then their information will be divided into separate sections in the following manner. <img alt="Alt text" src="../image-48.png" /></p>
@@ -186,17 +244,17 @@
         As you have selected the image, the red &quot;change&quot; button activates which lets you change the image (can reselect the same image too)
     c. After a profile image is uploaded, can also remove the picture by clicking on the grey delete icon.
     d. As we hover over the deletion icon, it shows the help text &quot; Remove profile photo and return to the default icon&quot;
-    e. Adding a profile image is not a mandaotory field to be filled.
+    e. Adding a profile image is not a mandatory field to be filled.
 </code></pre>
 <ol>
 <li>Information such as First, middle, last name &amp; phone no. are automatically pre-filled.</li>
 </ol>
 <pre><code>    a. The country code for a phone number is fixed as +1 and should be 10 digits.
     b. The minimum and maximum character limits for entering the name would be 1 and 20. 
-    c. Middle name is not a mandaotory field to be filled.
+    c. Middle name is not a mandatory field to be filled.
 </code></pre>
 <p>All the updated information including image, name, and phone no. will be updated only when we click on the update button.</p>
-<p>A success notification "Contact updated succesfullly" will appear after successfully updating and reverts us back to the landing page of the section.</p>
+<p>A success notification "Contact updated successfully" will appear after successfully updating and reverts us back to the landing page of the section.</p>
 <h4 id="change-password"><strong>Change Password</strong></h4>
 <p>As we click on the edit icon, a pop-up appears with the following information
 <img alt="Alt text" src="../image-3.png" /></p>
@@ -204,13 +262,13 @@
 2. Enter new password - retype the new password
     a. Can type the same password as the current too.
 3. The user is prompted with the validations if:
-    a. The current password is wrong as &quot;Invalid Passowrd&quot;
+    a. The current password is wrong as &quot;Invalid Password&quot;
     b. If the passwords don’t match the newly typed password fields as &quot;Password does not match&quot;
     c. If the entered password format is wrong as &quot;At least 8 characters that include 1 uppercase, 1 lowercase, 1 special character, 1 number&quot;
 4. Update button activates as we type all the information correctly.
 5. Success notification as &quot;Password has been changed&quot; appears
 6. User is not logged out of the portal.
-7. User can also avail the benfit of the forgot password functionality by clicking on the button
+7. User can also avail the benefit of the forgot password functionality by clicking on the button
     a. As we hove rover the button, the text changes to blue
     b. Redirects you to the &quot;Forgot Password&quot; screen
 </code></pre>
