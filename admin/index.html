@@ -178,56 +178,67 @@
 <h2 id="onboarding">Onboarding</h2>
 <hr />
 <h4 id="sign-in"><strong>Sign In</strong></h4>
-<p>As an admin, will be able to sign into the portal using email address and password.
-- By default, Customer dashboard will be selected.
-- To show the field is active and cursor is placed on the field, placeholder would be in blue color, otherwise in grey color.
-- For Admin, Select the admin dashboard
-- Enter the valid email and password and click on sign in, you'll be logged into the portal
-- If the mail entered is of incorrect format or is left blank, will throw a validation message "Email is required and must be of valid format"
-- If the password field is left blank and clicked on sign, will throw a validation error message as "Password is required"
-- If wrong email or password is entered, will throw the notification as "Invalid email or password. Also, ensure the correct dashboard is selected"</p>
+<ul>
+<li>As an admin, will be able to sign into the portal using email address and password.</li>
+<li>By default, Customer dashboard will be selected.</li>
+<li>To show the field is active and cursor is placed on the field, placeholder would be in blue color, otherwise in grey color.</li>
+<li>For Admin, Select the admin dashboard</li>
+<li>Enter the valid email and password and click on sign in, you'll be logged into the portal</li>
+<li>If the mail entered is of incorrect format or is left blank, will throw a validation message "Email is required and must be of valid format"</li>
+<li>If the password field is left blank and clicked on sign, will throw a validation error message as "Password is required"</li>
+<li>If wrong email or password is entered, will throw the notification as "Invalid email or password. Also, ensure the correct dashboard is selected"</li>
+</ul>
 <p><img alt="Alt text" src="../image-62.png" /></p>
 <h4 id="forgot-password"><strong>Forgot Password</strong></h4>
-<p>As you click on the forgot password button, will redirect you the screen to enter the email address in order to receive the reset password email.
-- To show the field is active and cursor is placed on the field, placeholder would be in blue color, otherwise in grey color.
-- Send rest link button would be disable until a valid email address is entered.
-- If the email entered exists in the database, the send rest link button would get activated. With a success notification of "Reset Password link sent to your  email", it would redirect us to sign in page.
-- When you enter the wrong email address or leave the field blank, will show a validation error as "Email not found. Please enter a valid email." </p>
+<ul>
+<li>As you click on the forgot password button, will redirect you the screen to enter the email address in order to receive the reset password email.</li>
+<li>To show the field is active and cursor is placed on the field, placeholder would be in blue color, otherwise in grey color.</li>
+<li>Send rest link button would be disable until a valid email address is entered.</li>
+<li>If the email entered exists in the database, the send rest link button would get activated. With a success notification of "Reset Password link sent to your  email", it would redirect us to sign in page.</li>
+<li>When you enter the wrong email address or leave the field blank, will show a validation error as "Email not found. Please enter a valid email." </li>
+</ul>
 <p><img alt="Alt text" src="../image-63.png" /></p>
 <h4 id="reset-password"><strong>Reset Password</strong></h4>
 <ul>
 <li>
-<p>Below is the m=email template with the link to reset your password
-    From: QHL Support
-    Subject: Reset Password
-    ---
-    Hi [user's first name], </p>
-<p>Please use the link below to reset the password for your account.</p>
-<p>Click here to reset your password
-*Link access will expire in 48 hours.</p>
-<p>Thanks
-Quick Hands Logistics
-"
-- The link is valid for 48 hours
-- Password should follow the format of minimum 8 characters that includes 1 Uppercase, 1 Lowercase, 1 Special Character, 1 Number, else will throw a validation message
-- Reset button will be disable until the information is entered
-- Will throw a validation error message if the passwords do not match
-- If click on cancel button, will redirect you back to the sign in page
-- To show the field is active and cursor is placed on the field, placeholder would be in blue color, otherwise in grey color.
-- As you click on reset button, will throw a success notification "Password has been updated" and redirect you to the sign in page.
-- below is the template user receives when they set their password
-From: QHL Support
-Subject: Password Updated</p>
-<hr />
-<p>Hi [user's first name],</p>
-<p>Your password has been successfully updated!</p>
-<p>(link to home page of sing-in page here) </p>
-<p>Thanks,
+<p>Below is the email template with the link to reset your password
+        From: QHL Support
+        Subject: Reset Password</p>
+<pre><code>Hi [user's first name],
+
+Please use the link below to reset the password for your account.
+
+Click here to reset your password
+*Link access will expire in 48 hours.
+
+Thanks
+Quick Hands Logistics"
+</code></pre>
+</li>
+<li>
+<p>The link is valid for 48 hours</p>
+</li>
+<li>Password should follow the format of minimum 8 characters that includes 1 Uppercase, 1 Lowercase, 1 Special Character, 1 Number, else will throw a validation message</li>
+<li>Reset button will be disable until the information is entered</li>
+<li>Will throw a validation error message if the passwords do not match</li>
+<li>If click on cancel button, will redirect you back to the sign in page</li>
+<li>To show the field is active and cursor is placed on the field, placeholder would be in blue color, otherwise in grey color.</li>
+<li>As you click on reset button, will throw a success notification "Password has been updated" and redirect you to the sign in page.</li>
+<li>Below is the template user receives when they set their password<pre><code>From: QHL Support
+Subject: Password Updated
+
+Hi [user's first name],
+
+Your password has been successfully updated!
+
+(link to home page of sing-in page here)
+
+Thanks,
 Quick Handgs Logistics"
-<img alt="Alt text" src="../image-64.png" /></p>
+</code></pre>
+<p><img alt="Alt text" src="../image-64.png" /></p>
 </li>
 </ul>
-<hr />
 <h2 id="user-profile">User Profile</h2>
 <hr />
 <p>As the admin clicks on the profile icon on the top, detail information related to the logged in user would appear such as user name with associated role, email, and password which can be further viewed and updated. </p>
