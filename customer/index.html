@@ -53,7 +53,7 @@
 </li>
                                     
 <li>
-    <a href="../lead.md" class="dropdown-item">Lead</a>
+    <a href="../lead/" class="dropdown-item">Lead</a>
 </li>
                                 </ul>
                             </li>
@@ -74,7 +74,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../tech/" class="nav-link">
+                                <a rel="next" href="../lead/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -273,52 +273,219 @@ Quick Handgs Logistics"
 <hr />
 <h2 id="dashboard">Dashboard</h2>
 <hr />
+<h4 id="landing-page"><strong>Landing page</strong></h4>
 <p>When there are no schedules active in a month, the information on landing shows no records for both kind of view; as list and calendar view as seen in the image. <img alt="Alt text" src="../image-55.png" /></p>
+<p>When there are schedules planned in a month, their information appears on the landing page for both kind of view; as list and calendar view. <img alt="Alt text" src="../image-88.png" /></p>
+<p>Card information shows the count for the total buildings with work date schedule month and the total work date schedules for the current running month. Section is divided into today, next week and remaining months schedules. (which include the next three week) Table for each section include the same columns as follows
+  - Work date - The day on which the work to be performed for the schedule 
+  - Building Name - For whom the work is scheduled for
+  - Shift - Building's shift
+  - Department - Buildings' department
+  - Lead - Main assigned lead for the building
+  - Container Type - Type and quantity of containers scheduled
+  - Total Containers - Total quantity of containers scheduled
+  - Created by - Name of the person who created either customer's contact(managers &amp; supervisors) or lead for the building appears
+  - Status - Various types of following status appears for the scheduled
+    - Scheduled - When the schedule has been created and work has not started. Color code is light blue
+    - Signed - When customer signs customer sheet, it depicts the work has been completed. Color code is dark blue
+    - Overdue- When the scheduled work shift and customer has not signed the customer sheet. Color code is orange.
+    - In Progress - When lumpers starts to work on the first scheduled container.
+    - Completed - When all schedules are in complete status
+    - Cancelled - When not all containers are given a complete status
+    - Terminated - When a schedule has been cancelled by the contact or lead
+    - Unfinished - Has a container that has to be resumed in future
+  - Action
+    - Live Details - As you click on the red network button, you'll be redirected to page where you can view live updates for the current day of a schedule
+    - Schedule Details - As you click on the eye button, you'll be redirected to the schedules details page</p>
+<h4 id="work-progress"><strong>Work Progress</strong></h4>
+<ul>
+<li>Appears for only the current active day of the schedule</li>
+<li>A informative section of the building appears on top which consists of the building name, address, Internal Contacts with the pop up to show the contact's name, work date, shift and it's time, department, main lead with the work schedule status</li>
+<li>A section appears for the container status, how many are scheduled and the count under each status</li>
+<li>For each container type; a separate section is presented followed by it's detail. The hierarchy followed for this is Outbound, live load and drop</li>
+<li>The column in the table is as followed</li>
+<li>Scheduled - The status of the container</li>
+<li>Fixed container parameters appears which are followed in the listed hierarchy Door, Container Number, Cases, Items/Sort</li>
+<li>After The fixed containers, additional or customer parameters if any will appear in the columns</li>
+<li>Worker - Who all worked on the container<img alt="Alt text" src="../image-78.png" /></li>
+<li>Start Time - Of the schedule</li>
+<li>End Time - of the schedule</li>
+<li>Status - of the container</li>
+<li>Scheduled Notes<ul>
+<li>If there any notes associated, the button will turn blue and if not then grey</li>
+<li>As you click on the pop up, the saved note appears.</li>
+<li>The pop up includes the notes for customer and QHL entered by the lead.<img alt="Alt text" src="../image-79.png" /><img alt="Alt text" src="../image-77.png" /></li>
+</ul>
+</li>
+</ul>
 <h2 id="schedules">Schedules</h2>
 <hr />
-<h4 id="landing-page"><strong>Landing Page</strong></h4>
+<h4 id="landing-page_1"><strong>Landing Page</strong></h4>
+<p>When no schedules are scheduled for upcoming days, the landing page appears as shown in the image. You can view the landing page in two views; list view &amp; calendar view. <img alt="Alt text" src="../image-47.png" /> </p>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page.
+1. Search - A single search bar which throws result by the building name. Placeholder for the search bar is "Search Building Name" with a search icon.
+    - All Buildings
+        - As you type the respective associated information regarding the entered building name will start appearing in the table.
+        - Search function overwrites the filters.
+2. Widgets 
+   - Shift - Can select the shifts from the dropdown
+   - Created By - Name of the person who has created the schedule appears in the dropdown
+   - Status - Can filter via status
+   - All Dates - Can search via specific schedule through their work date</p>
 <ul>
-<li>When no schedules are scheduled for upcoming days, the landing page appears as shown in the image.<img alt="Alt text" src="../image-47.png" /></li>
+<li>Table for each section include the same columns as follows</li>
+<li>Building Name - For whom the work is scheduled for</li>
+<li>Shift - Building's shift</li>
+<li>Duration (Repetition)- The duration, custom, weekly or monthly, represented in a date form</li>
+<li>Total Days - The total for which the schedule is created for</li>
+<li>Container Type / Duration - Type and quantity of containers scheduled</li>
+<li>Total Containers / Duration - Total quantity of containers scheduled</li>
+<li>Created by - Name of the person who created either customer's contact(managers &amp; supervisors) or lead for the building appears</li>
+<li>Status - Various types of following status appears for the scheduled<ul>
+<li>Scheduled - When the schedule has been created and work has not started. Color code is light blue</li>
+<li>Signed - When customer signs customer sheet, it depicts the work has been completed. Color code is dark blue</li>
+<li>Overdue- When the scheduled work shift and customer has not signed the customer sheet. Color code is orange.</li>
+<li>In Progress - When lumpers starts to work on the first scheduled container.</li>
 </ul>
-<p>Terminate a schedule <img alt="Alt text" src="../image-72.png" /> with a confirmation pop up <img alt="Alt text" src="../image-73.png" /></p>
+</li>
+<li>
+<p>Action</p>
+<ul>
+<li>Notes - As you click on the button, a pop up open to view the details of the scheduled notes</li>
+<li>Schedule Details - As you click on the eye button, you'll be redirected to the schedules details page</li>
+<li>Edit Schedule - Will open a pop up to edit the schedule details. Button will be disable for the current active date schedule</li>
+<li>Terminate a schedule, means deleting a schedule with a confirmation pop up <img alt="Alt text" src="../image-72.png" /> <img alt="Alt text" src="../image-73.png" /></li>
+<li>When you click on the button, the upcoming days after the selected schedule that is to be terminated will automatically be terminated too.</li>
+<li>You can select specific custom days too for terminating a schedule </li>
+</ul>
+</li>
+<li>
+<p>A schedule automatically moves to non active after the work date has been passed or has been terminated <img alt="Alt text" src="../image-74.png" /></p>
+</li>
+</ul>
+<p>Calendar View
+- total containers for a building are visible for each day with a combination of all shifts &amp; departments.
+- When you click on the card for a following, pop up appears with the scheduled information
+- Can switch between month to see the future schedules</p>
+<h4 id="schedule-details"><strong>Schedule Details</strong></h4>
+<ul>
+<li>
+<p>Appears for only the upcoming schedules in a month. Can view the landing page in two views. View by Date and by type.in two views. View by Date and by type. As suggested by the name the filtering on the page would be done through upcoming days for the schedule for the former type. for the later type the filtering would eb done based on the container type.<img alt="Alt text" src="../image-93.png" /></p>
+</li>
+<li>
+<p>A informative section of the building appears which consists of the building name, address,Manager &amp; supervisor's name, work date, shift and it's time, department, main lead, total scheduled containers with the status</p>
+</li>
+<li>For each container type; a separate section is presented followed by it's detail. The hierarchy followed for this is Outbound</li>
+<li>The column in the table is as followed</li>
+<li>Origin - The status of the container</li>
+<li>Start Time - Of the schedule</li>
+<li>Scheduled On - the date it was scheduled</li>
+<li>Duration - Based on custom, weekly or monthly</li>
+<li>Created By - By whom it was created</li>
+<li>Role - Role of the person who created</li>
+<li>Status - Status of the container</li>
+<li>Scheduled Notes<ul>
+<li>If there any notes associated, the button will turn blue and if not then grey</li>
+<li>As you click on the pop up, the saved note appears. </li>
+</ul>
+</li>
+</ul>
 <h4 id="add-schedule"><strong>Add Schedule</strong></h4>
 <p>By clicking on the add button you'll be able to add a schedule from the next 12hours. <img alt="Alt text" src="../image-46.png" /></p>
+<p>The fields are as followed
+- Building - For the building the contact has permission for will start appearing in the dropdown
+- Shift - Saved shift for the selected building will be highlighted and can select
+- Duration - Can select the days for one day, week, month or through custom. 
+- Add Containers - Start time would be specific to the building's shift
+  - Outbound
+    - Clicking on the add container is specific for adding per one row
+    - Can delete the containers from the row 
+  - Live Load
+    - Clicking on the add container is specific for adding per one row
+    - Can delete the containers from the row
+  - Drop 
+    - Can enter the quantity number at once with the start time
+    - Can delete the containers from the row
+- Notes - Can enter the notes for the schedule, placeholder text will be grey with the text as "You can enter notes for the QHL Team who will work on the containers in this schedule.
+- At least a single container is mandatory to be filled with the other building and date information.
+- The Add schedule button is activated once all mandatory information has been fulfilled.
+- Once you click on the add schedule button, a confirmation pop up with the schedule details will appear as in the image. <img alt="Alt text" src="../image-89.png" />
+- Once you click on the submit, will redirect you to the schedule detail page.</p>
 <h4 id="edit-schedule"><strong>Edit Schedule</strong></h4>
+<p>As you click on the edit icon for the schedule. All the dates for the schedule will appear for selected dates. <img alt="Alt text" src="../image-90.png" />
+- You cannot edit the building, shift and duration for the schedule
+- For a a particular container,
+  - can edit the time for the container, once you click on the edit time; a pop up opens with the time as per the building
+  - Can terminate the schedule
+    - Will grey out the whole row for the container as per the container
+    - As you click on terminate, undo cancellation button will appear to revert the changes
+  - Can add more containers
+  - For each day, we have the "View cancelled Containers", the button is activated when the changes have been made after a schedule was created which shows information related to cancelled container  <img alt="Alt text" src="../image-92.png" />
+- Clicking on the update will open a pop up with the changes made. <img alt="Alt text" src="../image-91.png" />
+- After a success notification it will redirect you to the schedule detail page.</p>
 <h2 id="whose-working"><strong>Whose Working</strong></h2>
 <hr />
-<p><img alt="Alt text" src="../image-54.png" />
+<p>Information is filled only for the current active date when the schedule lead &amp; lumpers attendance through the lead. Based on the permission for the buildings assigned for the contact the information appears on the landing page for each building.<img alt="Alt text" src="../image-54.png" />
 1. Widgets
-    - Shift
-    - Department
-2. Search
-    - 
-3. Listing - </p>
+    - Shift - All shift options appears in the dropdown
+    - Department - All departments appear int he dropdown
+2. Search - Can search for the below two functions:
+   1. By Name - of employee (lead &amp; lumper)
+   2. Employee ID - Can search by entering employee ID
+3. Listing - 
+   1. Name - of the employee
+   2. Role - Of the employee
+   3. Shift - 
+   4. Department
+   5. Email
+   6. Phone
+   7. View ID</p>
 <h2 id="customer-sheet"><strong>Customer Sheet</strong></h2>
 <hr />
 <h2 id="reports"><strong>Reports</strong></h2>
 <hr />
 <h2 id="buildings"><strong>Buildings</strong></h2>
 <hr />
-<p>The information for the building for whom the contacts has permission for. <img alt="Alt text" src="../image-53.png" /></p>
+<p>The information for the building for whom the contacts has permission for. <img alt="Alt text" src="../image-53.png" />
+Can search for all buildings. the table has the information for the building, the contact has permission for. The table include the following columns
+- Building Name 
+- City/state - of the building
+- Internal contacts - Wills show the number which relates to all the contacts for the building
+- District Manager - Name of the DM
+- Leads - Assigned main leads for the building will appear. When they are more than one, the number will appear. If you clcik on the number, will open the pop up to view their details
+- Lumpers - Assigned main lumpers for the building will appear. When they are more than one, the number will appear. If you clcik on the number, will open the pop up to view their details
+- Shift details
+  - Can click on the view button, will show the information of DM and lead <img alt="Alt text" src="../image-94.png" />
+- Action
+  - Eye button to view buildings detail page
+  - Calendar icon to view the schedules for the building
+    - Will redirect to the schedules landing page with the building selected in the search field. the respective information will appear on the page.</p>
 <h2 id="internal-contacts"><strong>Internal Contacts</strong></h2>
 <hr />
-<p>Name of all the contactswho are associated/assigned with the same building asa contact will appear. Here is the snapshot of the section.<img alt="Alt text" src="../image-52.png" />
+<p>Name of all the contacts who are associated/assigned with the same building as contact will appear. Here is the snapshot of the section.<img alt="Alt text" src="../image-52.png" />
 1. Search
-    - By Name, email and phone
-2. Listing</p>
+    - By Name, email and phone of the contact. If the relevant searches are found the data will start populating in the table or else will show no records found.
+2. Listing - Include following columns
+   1. Name - Name of the contact
+   2. Common Building - Buildings name will appear. If the contact shares more than one building then multiple will appear, when clicked will open the pop up with the buildings name. <img alt="Alt text" src="../image-95.png" />
+   3. Permissions - If the contact only has view permission for the building then view button will appear. If the contact has both the permission then schedule/view button will appear
+   4. Email - of the contact will appear
+   5. Phone - of the contact will appear</p>
 <h2 id="qhl-contacts"><strong>QHL Contacts</strong></h2>
 <hr />
-<p>Name of all the employee who are associated with the building the contact is assigned to will appear. Here is the snapshot of the section. <img alt="Alt text" src="../image-51.png" /></p>
+<p>Name of all the employee (DM &amp; Lead) who are associated with the building, the contact is assigned to will appear. Here is the snapshot of the section. <img alt="Alt text" src="../image-51.png" /></p>
 <ol>
 <li>Search<ul>
-<li>By Name, email and phone</li>
-<li>By ID<ul>
-<li>As  you enter the unigue employee ID, data will start to popuplate in the table as per the role</li>
+<li>By Name, email and phone of the contact. If the relevant searches are found the data will start populating in the table or else will show no records found.</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>Listing</li>
+<li>Listing - Include following columns</li>
+<li>Name - Name of the contact</li>
+<li>Role - of the employee</li>
+<li>Building - Buildings name will appear. If the contact shares more than one building then multiple will appear, when clicked will open the pop up with the buildings name. <img alt="Alt text" src="../image-95.png" /></li>
+<li>Email - of the contact will appear</li>
+<li>Phone - of the contact will appear</li>
+<li>View ID - To download and preview the ID</li>
 </ol>
 <h2 id="settings"><strong>Settings</strong></h2>
 <hr />

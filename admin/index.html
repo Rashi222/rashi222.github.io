@@ -53,7 +53,7 @@
 </li>
                                     
 <li>
-    <a href="../lead.md" class="dropdown-item">Lead</a>
+    <a href="../lead/" class="dropdown-item">Lead</a>
 </li>
                                 </ul>
                             </li>
@@ -1395,43 +1395,52 @@ Quick Hands Logistics&quot;
 <hr />
 <h4 id="landing-page_5"><strong>Landing Page</strong></h4>
 <p>You can view the landing page in two views; list view &amp; calendar view. When there are no schedules(current and upcoming) active in a month including, the information on landing shows no records for both kind of view as seen in the image <img alt="Alt text" src="../image-67.png" /> <img alt="Alt text" src="../image-68.png" /></p>
-<ul>
-<li>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page.</li>
-<li>For showing the total customers, employees and buildings on the admin portal through three cards.</li>
-<li>Table for each section include the same columns as follows</li>
-<li>Work date - The day on which the work to be performed for the schedule </li>
-<li>Building Name - For whom the work is scheduled for</li>
-<li>Shift - Building's shift</li>
-<li>Department - Buildings' department</li>
-<li>Container Type - Type and quantity of containers scheduled</li>
-<li>Total Containers - Total quantity of containers scheduled</li>
-<li>Created by - Name of the person who created either customer's contact(managers &amp; supervisors) or lead for the building appears</li>
-<li>Status - Various types of following status appears for the scheduled<ul>
-<li>Scheduled - When the schedule has been created and work has not started. Color code is light blue</li>
-<li>Signed - When customer signs customer sheet, it depicts the work has been completed. Color code is dark blue</li>
-<li>Overdue- When the scheduled work shift and customer has not signed the customer sheet. Color code is orange.</li>
-<li>In Progress - When lumpers starts to work on the first scheduled container.</li>
-<li>Completed - When all schedules are in complete status</li>
-<li>Cancelled - When not all containers are given a complete status</li>
-<li>Terminated - When a schedule has been cancelled by the contact or lead</li>
-<li>Unfinished - Has a container that has to be resumed in future</li>
-</ul>
-</li>
-<li>Action<ul>
-<li>Live Details - As you click on the red network button, you'll be redirected to page where you can view live updates for the current day of a schedule</li>
-<li>Schedule Details - As you click on the eye button, you'll be redirected to the schedules details page</li>
-</ul>
-</li>
-</ul>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page. For showing the total customers, employees and buildings on the admin portal through three cards. Section is divided into today, next week and remaining months schedules (which include the next three week)
+- Table for each section include the same columns as follows
+  - Work date - The day on which the work to be performed for the schedule 
+  - Building Name - For whom the work is scheduled for
+  - Shift - Building's shift
+  - Department - Buildings' department
+  - Container Type - Type and quantity of containers scheduled
+  - Total Containers - Total quantity of containers scheduled
+  - Created by - Name of the person who created either customer's contact(managers &amp; supervisors) or lead for the building appears
+  - Status - Various types of following status appears for the scheduled
+    - Scheduled - When the schedule has been created and work has not started. Color code is light blue
+    - Signed - When customer signs customer sheet, it depicts the work has been completed. Color code is dark blue
+    - Overdue- When the scheduled work shift and customer has not signed the customer sheet. Color code is orange.
+    - In Progress - When lumpers starts to work on the first scheduled container.
+    - Completed - When all schedules are in complete status
+    - Cancelled - When not all containers are given a complete status
+    - Terminated - When a schedule has been cancelled by the contact or lead
+    - Unfinished - Has a container that has to be resumed in future
+  - Action
+    - Live Details - As you click on the red network button, you'll be redirected to page where you can view live updates for the current day of a schedule
+    - Schedule Details - As you click on the eye button, you'll be redirected to the schedules details page</p>
 <p>Calendar View
 - total containers for a building are visible for each day with a combination of all shifts &amp; departments.
 - When you click on the card for a following, pop up appears with the scheduled information
 - Can switch between month to see the future schedules</p>
 <h4 id="work-progress"><strong>Work progress</strong></h4>
 <ul>
-<li>Live details as they keep on updating</li>
+<li>Live details of the schedule as the container status's keep on updating <img alt="Alt text" src="../image-76.png" /></li>
 <li>Appears for only the current active day of the schedule</li>
-<li></li>
+<li>A informative section of the building appears on top which consists of the building name, address, Manager &amp; supervisor's name, work date, shift and it's time, department, main lead with the work schedule status</li>
+<li>A section appears for the container status, how many are scheduled and the count under each status</li>
+<li>For each container type; a separate section is presented followed by it's detail. The hierarchy followed for this is Outbound, live load and drop</li>
+<li>The column in the table is as followed</li>
+<li>Scheduled - The status of the container</li>
+<li>Fixed container parameters appears which are followed in the listed hierarchy Door, Container Number, Cases, Items/Sort</li>
+<li>After The fixed containers, additional or customer parameters if any will appear in the columns</li>
+<li>Worker - Who all worked on the container<img alt="Alt text" src="../image-78.png" /></li>
+<li>Start Time - Of the schedule</li>
+<li>End Time - of the schedule</li>
+<li>Status - of the container</li>
+<li>Scheduled Notes<ul>
+<li>If there any notes associated, the button will turn blue and if not then grey</li>
+<li>As you click on the pop up, the saved note appears.</li>
+<li>The pop up includes the notes for customer and QHL entered by the lead.<img alt="Alt text" src="../image-79.png" /></li>
+</ul>
+</li>
 </ul>
 <hr />
 <h2 id="schedules">Schedules</h2>
@@ -1489,7 +1498,7 @@ Quick Hands Logistics&quot;
 - Can switch between month to see the future schedules</p>
 <h4 id="schedule-detail-page"><strong>Schedule Detail Page</strong></h4>
 <ul>
-<li>Appears for only the upcoming schedules in a month <img alt="Alt text" src="../image-69.png" />. Include following details</li>
+<li>Appears for only the upcoming schedules in a month. Can view the landing page in two views. View by Date and by type. As suggested by the name the filtering on the page would be done through upcoming days for the schedule for the former type. for the later type the filtering would eb done based on the container type. <img alt="Alt text" src="../image-69.png" /> </li>
 <li>A informative section of the building appears which consists of the building name, address,Manager &amp; supervisor's name, work date, shift and it's time, department, main lead, total scheduled containers with the status</li>
 <li>For each container type; a separate section is presented followed by it's detail. The hierarchy followed for this is Outbound</li>
 <li>The column in the table is as followed</li>
@@ -1517,8 +1526,141 @@ Quick Hands Logistics&quot;
 <hr />
 <h2 id="temporary-lumper">Temporary Lumper</h2>
 <hr />
+<h4 id="landing-page_7"><strong>Landing Page</strong></h4>
+<ul>
+<li>
+<p>When there are no lead and lumpers scheduled as temporary for a building. The information in table appears as blank with no records as seen in the image. <img alt="Alt text" src="../image-80.png" /></p>
+</li>
+<li>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as adding, cancelling or unassign a lumper</p>
+</li>
+<li>Search - search bars which throws result for the below two functions.<ul>
+<li>All Buildings</li>
+<li>As you type the respective associated information regarding the entered building name will start appearing in the table.</li>
+<li>If no data is available then no records will be shown </li>
+<li>Search function overwrites the filters.</li>
+<li>Search Lumper, Lead</li>
+<li>Search through the name of lead and lumpers that are temporarily scheduled, results will start populating in the table</li>
+<li>If no information is available, then no records will be shown</li>
+</ul>
+</li>
+<li>Widgets </li>
+<li>Shift - Can select the shifts from the dropdown</li>
+<li>District Managers - Name of the person who has created the schedule appears in the dropdown</li>
+<li>Department - can select departments from the dropdown</li>
+<li>
+<p>All Dates - Can search via specific schedule through their work date</p>
+</li>
+<li>
+<p>Two types of section are available; Scheduled and expired Schedules  with the count. Schedules are the ones which are active and running for the current and upcoming days. Expired are the ones where the schedule was cancelled or the work date has been passed. Table for each section include the same columns as follows <img alt="Alt text" src="../image-82.png" /></p>
+</li>
+<li>Temp lumpers - Name of the employee(lead &amp; Lumper)</li>
+<li>Sent to Building - For whom the employee is scheduled for</li>
+<li>District Manager - Name of the main district manager of the scheduled building</li>
+<li>Lead- Name of the main lead of the scheduled building</li>
+<li>Shift Details - Building's shift details appear</li>
+<li>Assigned By - Name of the person who assigned</li>
+<li>Date Assigned - When the employee was added as temporary</li>
+<li>Work date - For the day, teh lumper is assigned</li>
+<li>Start Time - From when the schedule lumper will start</li>
+<li>Status - Various types of following status appears for the scheduled<ul>
+<li>Scheduled - When the schedule has been created and work has not started.</li>
+<li>Signed - When customer signs customer sheet, it depicts the work has been completed. Color code is dark blue</li>
+<li>Overdue- When the scheduled work shift and customer has not signed the customer sheet. Color code is orange.</li>
+<li>In Progress - When lumpers starts to work on the first scheduled container.</li>
+</ul>
+</li>
+<li>Action<ul>
+<li>Notes - As you click on the button, a pop up open to view the details of the scheduled notes. Button would be disabled when no notes have been added and grey when there are notes</li>
+<li>Edit - Edit button to edit the schedule details</li>
+<li>Cancel - Blue cross button to cancel the schedule. The assigned temporary employee will be unassigned</li>
+</ul>
+</li>
+</ul>
+<h4 id="add-temporary-lumper"><strong>Add Temporary Lumper</strong></h4>
+<p>To add a lead or lumper on temporary basis, a pop up opens when you click on the add button. <img alt="Alt text" src="../image-81.png" />
+The fields are as follows:
+- Customer 
+  - Start typing the customer name, relevant names would appear in the dropdown and can select from the dropdown.
+  - Search will start appearing once you enter the first alphabet
+- Building
+  - Respective building under the customer name wills start appearing
+- Shift - The selected shift for the building will start appearing
+- Department - The selected department will start appearing for the selected building
+- Select lumpers
+  - Available lead &amp; lumpers will start appearing proven they fulfil the criteria 
+    - that they have the ability to travel selected as yes
+    - Distance to be shown, calculating them from selected employee address to selected building address; if it falls under their mentioned range of travel across buildings have them appear in the dropdown
+    - Not assigned as the main lead &amp; lumper for the building
+    - For the same building and shift can assign the same employee
+  - Can search the employee by entering their name
+- Work Duration - Based on custom, weekly, day or monthly
+- Start time - Only shows the range selected for the building
+- Notes - Enter the notes for the temporary schedule lumper</p>
+<p>Schedule button remains deactivated until all information is fulfilled, with a success notification it redirects you back to the listing page. All are mandatory field except notes</p>
 <h2 id="lumper-request">Lumper Request</h2>
 <hr />
+<p>When a lead requests for lumper, the requests appear on the web portal under lumper requests. As the new request has been made, a red count appear in the side navigating tab and a rot dot appears beside the new lumper request on it's landing page. <img alt="Alt text" src="../image-83.png" /><img alt="Alt text" src="../image-84.png" /></p>
+<ul>
+<li>When there are no lead and lumpers scheduled as temporary for a building. The information in table appears as blank with no records as seen in the image.</li>
+<li>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as to fulfil a request partially or fully.</li>
+<li>Search - search bars which throws result for the below two functions.<ul>
+<li>All Buildings</li>
+<li>As you type the respective associated information regarding the entered building name will start appearing in the table.</li>
+<li>If no data is available then no records will be shown </li>
+<li>Search function overwrites the filters.</li>
+<li>Customer</li>
+<li>Search through the name of Customer for whom the request is generated, results will start populating in the table</li>
+<li>If no information is available, then no records will be shown</li>
+<li>Search Customer, building District manager, Lead</li>
+<li>Search through the name of Customer, building District manager and lead for whom the request is generated, results will start populating in the table</li>
+<li>If no information is available, then no records will be shown</li>
+</ul>
+</li>
+<li>Widgets </li>
+<li>State / City
+        - As you select a state, then the city filter gets activated and you can select
+        - Based on the state selected, the city will be populated
+        - Based on the information selected, the data will be only populated for them.
+        - If no data is found, will show "No Results found"</li>
+<li>Status<ul>
+<li>Pending - When the request hasn't been fulfilled</li>
+<li>Complete - When the request has been fulfilled </li>
+<li>Partial - When the request has been partially fulfilled</li>
+<li>Rejected - when the request has been denied</li>
+<li>Expired - When the request start time, date has been passed</li>
+</ul>
+</li>
+</ul>
+<p>Two types of section are available; Active and Non Active Request with the count. Active Requests are the ones for which requests are pending or currently running and for upcoming days. Non Active requests are the ones where the request ahs not been fullfiled as it date has been passed or was denied. </p>
+<p>Table for each section include the same columns as follows 
+- Building - For whom the employee is scheduled for
+- District Manager - Name of the main district manager of the scheduled building
+- Lead- Name of the main lead of the scheduled building
+- Shift Details - Building's shift details appear
+- Request Made - When was the request made with the day, date and time information
+- Work date - For the day, the lumper is requested for, with the days remaining from the current day
+- Lumpers Start Time - From when the schedule lumper will start working
+- Lumper Assigned - The number of requests that were made, how many were approved or not
+  - Can click on the number, a pop up opens where you can vie all the lumpers assigned <img alt="Alt text" src="../image-85.png" />
+  - Can click on the red button under unassigned for the lumpers 
+  - Clicking on the button, the assigned lumper will be unassigned
+- Status - Various types of following status appears for the scheduled
+  - Pending - When there is no action on the request
+  - Complete - When the request has been fulfilled 
+  - Partial - When the request has been partially fulfilled
+  - Rejected - when the request has been denied
+  - Expired - When the request start time, date has been passed
+- Action
+  - Notes - As you click on the button, a pop up open to view the details of the scheduled notes. Button would be disabled when no notes have been added and grey when there are notes
+  - Check button - To approve the request <img alt="Alt text" src="../image-86.png" />
+    - As you click on the button, the Available lead &amp; lumpers will start appearing proven they fulfil the criteria 
+      - have the ability to travel selected as yes
+      - Distance to be shown, calculating them from selected employee address to selected building address; if it falls under their mentioned range of travel across buildings have them appear in the dropdown
+      - Not assigned as the main lead &amp; lumper for the building
+      - For the same building and shift can assign the same employee
+      - Can search the employee by entering their name
+  - Cancel - Blue button to deny the request. The assigned employee will be unassigned. Clicking on yes, would reject the request.<img alt="Alt text" src="../image-87.png" /></p>
 <h2 id="correction-request">Correction Request</h2>
 <hr /></div>
             </div>
