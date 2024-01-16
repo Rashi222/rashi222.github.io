@@ -102,6 +102,58 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#user-profile" class="nav-link">User Profile</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#work-sheet" class="nav-link">Work Sheet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#time-clock" class="nav-link">Time Clock</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#customer-sheet" class="nav-link">Customer Sheet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lumper-sheet" class="nav-link">Lumper Sheet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#work-schedule" class="nav-link">Work Schedule</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#scheduled-lumpers" class="nav-link">Scheduled Lumpers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#reports" class="nav-link">Reports</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lumper-contact" class="nav-link">Lumper Contact</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#qhl-contacts" class="nav-link">QHL Contacts</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#customer-contact" class="nav-link">Customer Contact</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#settings" class="nav-link">Settings</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#logout" class="nav-link">Logout</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -113,7 +165,128 @@
 <hr />
 <h2 id="onboarding">Onboarding</h2>
 <hr />
-<h4 id="sign-in"><strong>Sign In</strong></h4></div>
+<h4 id="sign-in"><strong>Sign In</strong></h4>
+<p>Quickhands Logistics logo will appear on the top with the illustration image. <img alt="Alt text" src="../Screenshot_2024-01-16-17-52-12-86_c17200524cce5192d81c16a052319937.jpg" />
+- Cursor is placed on the employee ID field by default, placeholder would be in grey color for the fields.
+- Enter the valid employee ID and password(can click on the eye icon to show &amp; hide the entered password) and click on sign in, you'll be logged into the application <img alt="Alt text" src="../Screenshot_2024-01-16-18-01-25-31_c17200524cce5192d81c16a052319937.jpg" />
+- If  both the fields are left blank, will throw a validation message "Please enter Employee Id"
+- If the employee ID or password field is left blank and clicked on sign in, will throw a validation error message as "Please enter Employee Id" and "Please enter Password" respectively
+- If wrong employee ID or password is entered, will throw the notification as "Invalid employee ID or password"</p>
+<h4 id="forgot-password"><strong>Forgot Password</strong></h4>
+<ul>
+<li>As you click on the forgot password button, will redirect you the screen to enter the employee ID in order to receive the reset password email. Quickhands Logistics logo will appear on the top with the illustration image. <img alt="Alt text" src="../Screenshot_2024-01-16-17-52-26-22_c17200524cce5192d81c16a052319937.jpg" /></li>
+<li>Following text appears above the employee ID field "Enter the following information to receive an email with a link to reset your password."</li>
+<li>Reset Password button is activated before the employee ID is entered.</li>
+<li>If you leave the field blank and click on the reset password button, will throw a error message as "Please enter Employee Id"</li>
+<li>When you enter the wrong, correct employee ID and click on the button, will show the success message in the pop up as "Reset Password link has been sent.Please check your email" Once you click on the ok button, will redirect you to the sign in page. <img alt="Alt text" src="../Screenshot_2024-01-16-17-58-42-00_c17200524cce5192d81c16a052319937.jpg" /></li>
+</ul>
+<h4 id="reset-password"><strong>Reset Password</strong></h4>
+<ul>
+<li>
+<p>Below is the email template with the link to reset your password
+        From: QHL Support
+        Subject: Reset Password</p>
+<pre><code>Hi [user's first name],
+
+Please use the link below to reset the password for your account.
+
+Click here to reset your password
+*Link access will expire in 48 hours.
+
+Thanks
+Quick Hands Logistics
+</code></pre>
+</li>
+<li>
+<p>The link is valid for 48 hours</p>
+</li>
+<li>Password should follow the format of minimum 8 characters that includes 1 Uppercase, 1 Lowercase, 1 Special Character, 1 Number, else will throw a validation message</li>
+<li>Reset button will be disable until the information is entered</li>
+<li>Will throw a validation error message if the passwords do not match</li>
+<li>If click on cancel button, will redirect you back to the sign in page</li>
+<li>To show the field is active and cursor is placed on the field, placeholder would be in blue color, otherwise in grey color.</li>
+<li>As you click on reset button, will throw a success notification "Password has been updated" and redirect you to the screen. <img alt="Alt text" src="../image-97.png" /></li>
+<li>Below is the template user receives when they set their password<pre><code>From: QHL Support
+Subject: Password Updated
+
+Hi [user's first name],
+
+Your password has been successfully updated!
+
+(link to home page of sing-in page here)
+
+Thanks,
+Quick Hands Logistics"
+</code></pre>
+</li>
+</ul>
+<h2 id="user-profile">User Profile</h2>
+<hr />
+<p>As you cliCk on the arrow on the top beside the logged in person name, you'll be redirected to the profile details <img alt="Alt text" src="../Screenshot_2024-01-16-18-01-37-16_c17200524cce5192d81c16a052319937.jpg" />
+- QHL LOgo will appear on the top with the cubic images
+- Profile image will appear if the lead has uploaded, if not then the default image will appear
+- Name of the lead appears
+- Role with the associated building name appears in the second line
+- In 4 different card section, the lead information appears 
+  - First section is Contact which includes phone number and email of the lead
+  - Second section is Work Identification which includes employee ID, role, title(if there is no information "---" will appear) and Department 
+  - Third section is Work Schedule which includes the availability, shift, shift hours and schedule notes(if there is no information "---" will appear)
+  - Fourth section is Work Location which includes the customer and building name
+- Through the back button beside the title name, user can revert to previously selected section</p>
+<h2 id="work-sheet">Work Sheet</h2>
+<hr />
+<h2 id="time-clock">Time Clock</h2>
+<hr />
+<h2 id="customer-sheet">Customer Sheet</h2>
+<hr />
+<h2 id="lumper-sheet">Lumper Sheet</h2>
+<hr />
+<h2 id="work-schedule">Work Schedule</h2>
+<hr />
+<h2 id="scheduled-lumpers">Scheduled Lumpers</h2>
+<hr />
+<h2 id="reports">Reports</h2>
+<hr />
+<h2 id="lumper-contact">Lumper Contact</h2>
+<hr />
+<ul>
+<li>On the top page title is mentioned with the QHL Thumb logo.</li>
+<li>Can search by the lumper name, as you enter the first alphabet the results will start populating below.</li>
+<li>All the lumpers that are scheduled or assigned for the building will appear with their name and employee ID.</li>
+<li>Can call on their number by clicking on the phone icon.</li>
+<li>Can send the a text message by clicking on the message icon. As we click on the button, a pop up opens for writing the message. Clicking on send will send the message on lumper device as a sms. Clicking on cancel will revert to the previously selected page <img alt="Alt text" src="../Screenshot_2024-01-16-18-02-40-97_c17200524cce5192d81c16a052319937.jpg" /></li>
+</ul>
+<h2 id="qhl-contacts">QHL Contacts</h2>
+<hr />
+<p>As you click on the QHL contacts from side navigating tab, you'll be able to view the information related to the associated employee. QHL Logo appears on top. Associated employee(DM &amp; Lead) and qhl office information appears one below the other, the card information has the following details as seen in the image. <img alt="Alt text" src="../Screenshot_2024-01-16-18-02-06-86_c17200524cce5192d81c16a052319937.jpg" />
+- Name of the employee, QHL Office
+- Hours - for the QHL Office, open &amp; close time appears
+- Role of the employee
+- Shift - shift of the lead
+- Dept - Department of the lead
+- Email address and Phone number associated for employee and QHL Office, both are clickable fields
+- Message icon - To communicate with the employee selected</p>
+<h2 id="customer-contact">Customer Contact</h2>
+<hr />
+<p>As you click on the customer contact from side navigating tab, you'll be able to view the information related to the associated contact. 
+Building information appears on top which includes; building image, building name, full address and associated phone number as shown in the image. Below the building information, associated contacts(managers &amp; supervisors) information appear one below the other under Building contacts section, the card information has the following details as seen in the image.<img alt="Alt text" src="../Screenshot_2024-01-16-18-01-58-87_c17200524cce5192d81c16a052319937.jpg" />
+- Name of the contact
+- Role of the contact
+- Shift of the contact
+- Title - If nothing is saved, N/A will appear
+- Dept - Department of the contact
+- Email address and Phone number associated, both are clickable fields
+- Message icon - To communicate with the contact selected</p>
+<h2 id="settings">Settings</h2>
+<hr />
+<p>As you click on the settings from the side navigating tab <img alt="Alt text" src="../Screenshot_2024-01-16-18-01-52-61_c17200524cce5192d81c16a052319937.jpg" />
+- Choose language - English will be selected by default, spanish is the other option and will affect over all application once selected
+- Notifications
+  - You'll be able to receive notifications on mobile once you enable it
+  - Make sure the device settings are also turned on to be able to receive them </p>
+<h2 id="logout">Logout</h2>
+<hr />
+<p>A confirmation pop up opens when you click on the logout from side navigating tab. As you select yes, the employee will be redirected to sign in screen. As you select no, employee will be redirected to the screen he was present at. <img alt="Alt text" src="../Screenshot_2024-01-16-18-01-30-67_c17200524cce5192d81c16a052319937.jpg" /> <img alt="Alt text" src="../Screenshot_2024-01-16-18-01-44-71_c17200524cce5192d81c16a052319937.jpg" /></p></div>
             </div>
         </div>
 
