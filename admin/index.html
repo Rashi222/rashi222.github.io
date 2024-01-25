@@ -1677,25 +1677,41 @@ Quick Hands Logistics&quot;
 <p>When there are no customer sheet submitted by lead for a building's schedule. The information in table appears as blank with no records as seen in the image. </p>
 <p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing customer sheet report or generate it.</p>
 <ol>
+<li>Report Button - Appears on right side which redirects the user for generating the report</li>
 <li>Search - search bars which throws result for the below two functions.<ul>
-<li>All Buildings</li>
-<li>As you type the respective associated information regarding the entered building name will start appearing in the table.</li>
+<li>All Buildings<ul>
+<li>As you type the respective associated information regarding the entered building name will start appearing in the dropdown.</li>
 <li>If no data is available then no records will be shown </li>
 <li>Search function overwrites the filters.</li>
-<li>Search Lumper, Lead</li>
+</ul>
+</li>
+<li>Search Customer<ul>
+<li>As you type the respective associated information regarding the entered building name will start appearing in the dropdown.</li>
+<li>If no data is available then no records will be shown </li>
+<li>Search function overwrites the filters.</li>
+</ul>
+</li>
+<li>Search Customer, Building, Representative or QHL Lead<ul>
 <li>Search through the name of lead and lumpers that are temporarily scheduled, results will start populating in the table</li>
+<li>By representative it will search that lead has saved when signing up for customer details to submit a customer sheet</li>
 <li>If no information is available, then no records will be shown</li>
+</ul>
+</li>
 <li>All Dates - Can search via specific schedule through their work date</li>
 </ul>
 </li>
 <li>Widgets <ul>
 <li>Shift - Can select the shifts from the dropdown</li>
-<li>District Managers - Name of the person who has created the schedule appears in the dropdown</li>
 <li>Department - can select departments from the dropdown</li>
+<li>Signature<ul>
+<li>Signed - Signed customer sheet when signed and submitted by lead</li>
+<li>Pending - Pending customer sheet </li>
 </ul>
 </li>
-<li>The table consists of following columns:</li>
-<li>Date - The lumper sheet was signed</li>
+</ul>
+</li>
+<li>The table consists of following columns:<ul>
+<li>Date - The customer sheet was signed</li>
 <li>Customer - Associated customer name appears for the respective building's schedule</li>
 <li>Building - Associated building name appears for the schedule</li>
 <li>Shift - Building's shift appears</li>
@@ -1703,36 +1719,53 @@ Quick Hands Logistics&quot;
 <li>Lead - Assigned main lead name appears</li>
 <li>Not Completed - Counter of the containers appears which are in not completed status. If no containers have not completed status then 0 appears</li>
 <li>Cancelled - Counter of the containers appears which are in cancelled status. If no containers have not cancelled status then 0 appears</li>
-<li>Work Completed - Counter of the containers appears which are in completed status. If no containers have completed status then 0 appears</li>
-<li>Worker</li>
+<li>Completed - Counter of the containers appears which are in completed status. If no containers have completed status then 0 appears</li>
+<li>Signature <ul>
+<li>Status fo signed or pending appears</li>
+<li>When clicked on the signed button, opens pop up to show the representative name &amp; signature <img alt="Alt text" src="../image-98.png" /></li>
+</ul>
+</li>
 <li>Action <ul>
-<li>Eye Icon - </li>
+<li>Note <ul>
+<li>When notes are saved while submitting the sheet. Button turn blue and when clicked upon opens a pop up to show the saved note <img alt="Alt text" src="../image-99.png" /></li>
+<li>If no notes are saved, button turns grey and is disable</li>
+</ul>
+</li>
+<li>Eye Icon - To view customer sheet detail page</li>
+</ul>
+</li>
 </ul>
 </li>
 </ol>
+<h4 id="customer-sheet-detail"><strong>Customer Sheet Detail</strong></h4>
+<h4 id="customer-sheet-report-item-selection"><strong>Customer Sheet Report: Item Selection</strong></h4>
 <h2 id="lumper-sheet">Lumper Sheet</h2>
 <hr />
 <p>When there are no lumpers sheet submitted by lead for a building's schedule. The information in table appears as blank with no records as seen in the image. </p>
 <p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing lumper sheet report or generate it.</p>
 <ol>
-<li>Search - search bars which throws result for the below two functions.<ul>
-<li>All Buildings</li>
+<li>Report Button - Appears on right side which redirects the user for generating the report</li>
+<li>Search - search bar which throws result for the below two functions.<ul>
+<li>All Buildings<ul>
 <li>As you type the respective associated information regarding the entered building name will start appearing in the table.</li>
 <li>If no data is available then no records will be shown </li>
 <li>Search function overwrites the filters.</li>
-<li>Search Lumper, Lead</li>
+</ul>
+</li>
+<li>Search by Customer, Building, QHL Lead or Lumper<ul>
 <li>Search through the name of lead and lumpers that are temporarily scheduled, results will start populating in the table</li>
 <li>If no information is available, then no records will be shown</li>
+</ul>
+</li>
 <li>All Dates - Can search via specific schedule through their work date</li>
 </ul>
 </li>
 <li>Widgets <ul>
 <li>Shift - Can select the shifts from the dropdown</li>
-<li>District Managers - Name of the person who has created the schedule appears in the dropdown</li>
 <li>Department - can select departments from the dropdown</li>
 </ul>
 </li>
-<li>The table consists of following columns:</li>
+<li>The table consists of following columns:<ul>
 <li>Date - The lumper sheet was signed</li>
 <li>Customer - Associated customer name appears for the respective building's schedule</li>
 <li>Building - Associated building name appears for the schedule</li>
@@ -1741,14 +1774,24 @@ Quick Hands Logistics&quot;
 <li>Lead - Assigned main lead name appears</li>
 <li>Not Completed - Counter of the containers appears which are in not completed status. If no containers have not completed status then 0 appears</li>
 <li>Cancelled - Counter of the containers appears which are in cancelled status. If no containers have not cancelled status then 0 appears</li>
-<li>Work Completed - Counter of the containers appears which are in completed status. If no containers have completed status then 0 appears</li>
-<li>Worker</li>
+<li>Work Completed - Counter of the containers appears which are in completed status. If no containers have completed status then 0 appears<ul>
+<li>Count only appears when customer sheet has been signed</li>
+</ul>
+</li>
+<li>Worker <ul>
+<li>Count of the numbers of worked who were scheduled to work on containers</li>
+<li>When clicked on the number, opens a pop up to show information of the employee( lead &amp; lumper) who worked <img alt="Alt text" src="../image-100.png" /></li>
+</ul>
+</li>
 <li>Action <ul>
-<li>Eye Icon - </li>
+<li>Eye Icon - To view lumper sheet detail page</li>
+</ul>
+</li>
 </ul>
 </li>
 </ol>
-<h4 id="lumper-sheet-detail-report-view"><strong>Lumper Sheet Detail Report - View</strong></h4>
+<h4 id="lumper-sheet-report-view"><strong>Lumper Sheet Report - View</strong></h4>
+<h4 id="lumper-sheet-report-item-selection"><strong>Lumper Sheet Report: Item Selection</strong></h4>
 <h2 id="reports">Reports</h2>
 <hr />
 <h2 id="temporary-lumper">Temporary Lumper</h2>
