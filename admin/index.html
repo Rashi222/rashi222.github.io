@@ -1460,6 +1460,9 @@ Quick Hands Logistics&quot;
 <li>Once you select a state, city field will start to appear.</li>
 <li>For selecting a District Manager, name of the employee whose role is DM will start appearing<ul>
 <li>You can select one or multiple from the dropdown and click okay</li>
+<li>You should be able to add a DM to any District regardless of his address (Residence) </li>
+<li>You should be able to add a DM to multiple Districts. </li>
+<li>You should be able to have  multiple DM's to the same District. </li>
 </ul>
 </li>
 <li>If the district already exist it will throw an error to use Edit action.</li>
@@ -1738,6 +1741,11 @@ Quick Hands Logistics&quot;
 </li>
 </ol>
 <h4 id="customer-sheet-detail"><strong>Customer Sheet Detail</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing customer sheet report or generate it. Click on the generate report </p>
+<ol>
+<li>Report Button - Appears on right side which redirects the user for generating the report</li>
+<li></li>
+</ol>
 <h4 id="customer-sheet-report-item-selection"><strong>Customer Sheet Report: Item Selection</strong></h4>
 <h2 id="lumper-sheet">Lumper Sheet</h2>
 <hr />
@@ -1818,7 +1826,7 @@ Quick Hands Logistics&quot;
 </ul>
 </li>
 </ol>
-<p>Two types of section are available; Scheduled and expired Schedules  with the count. Schedules are the ones which are active and running for the current and upcoming days. Expired are the ones where the schedule was cancelled or the work date has been passed. Table for each section include the same columns as follows <img alt="Alt text" src="../image-82.png" /></p>
+<p>Two types of section are available; Scheduled and expired Schedules  with the count. Schedules are the ones which are active and running for the current and upcoming days. Expired are the ones where the schedule was cancelled the work date has been passed or completed. Table for each section include the same columns as follows <img alt="Alt text" src="../image-82.png" /></p>
 <ul>
 <li>Temp lumpers - Name of the employee(lead &amp; Lumper)</li>
 <li>Sent to Building - For whom the employee is scheduled for</li>
@@ -1830,16 +1838,15 @@ Quick Hands Logistics&quot;
 <li>Work date - For the day, teh lumper is assigned</li>
 <li>Start Time - From when the schedule lumper will start</li>
 <li>Status - Various types of following status appears for the scheduled<ul>
-<li>Scheduled - When the schedule has been created and work has not started.</li>
-<li>Signed - When customer signs customer sheet, it depicts the work has been completed. Color code is dark blue</li>
-<li>Overdue- When the scheduled work shift and customer has not signed the customer sheet. Color code is orange.</li>
-<li>In Progress - When lumpers starts to work on the first scheduled container.</li>
+<li>Scheduled - When the schedule has been created and work has not started. Only appears for the scheduled table.</li>
+<li>Cancelled - When the temporary lumper request has been cancelled by admin or DM.</li>
+<li>Completed - When the scheduled work for the temporary lumper has been completed.</li>
 </ul>
 </li>
 <li>Action<ul>
 <li>Notes - As you click on the button, a pop up open to view the details of the scheduled notes. Button would be disabled when no notes have been added and grey when there are notes</li>
-<li>Edit - Edit button to edit the schedule details</li>
-<li>Cancel - Blue cross button to cancel the schedule. The assigned temporary employee will be unassigned</li>
+<li>Edit - Edit button to edit the schedule details fro the temporary lumpers</li>
+<li>Cancel - Blue cross button to cancel the schedule. The assigned temporary lumper (employee) will be unassigned</li>
 </ul>
 </li>
 </ul>
