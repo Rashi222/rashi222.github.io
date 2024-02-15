@@ -213,7 +213,7 @@ Click here to reset your password
 *Link access will expire in 48 hours.
 
 Thanks
-Quick Hands Logistics"
+Quick Hands Logistics
 </code></pre>
 </li>
 <li>
@@ -1745,7 +1745,97 @@ Quick Hands Logistics&quot;
 </li>
 </ol>
 <h4 id="customer-sheet-detail"><strong>Customer Sheet Detail</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing customer sheet report or generate it. <img alt="alt text" src="../image-101.png" /></p>
+<ol>
+<li>Report Button - Appears on right side which redirects the user for generating the report</li>
+<li>The page is divided into separate section which includes the building details with ready to export functionality and for the container type details</li>
+<li>The first section - Building details consists of <ul>
+<li>Radio buttons for PDF &amp; excel button with generate &amp; generate all button<ul>
+<li>Generate button would automatically download the selected format (pdf or excel) </li>
+<li>Generate All button appears when there are multiple pages in a report</li>
+</ul>
+</li>
+<li>Building details which includes<ul>
+<li>Building Name - with the complete address </li>
+<li>Work date -  Complete day of work with the day, month date, year. Does not consists of abbreviations for months</li>
+<li>Customer Name</li>
+<li>Shift - Shift of the building</li>
+<li>Representative Name - the name lead fills up while submitting the customer sheet</li>
+<li>Manager - Name of the manager</li>
+<li>Shift Time - When we create a building, the time for the shift appears</li>
+<li>Signature - Uploaded signature will appear when lead submitted the customer sheet</li>
+<li>Supervisor - Name of the supervisor</li>
+<li>Department - full name of the department appears</li>
+<li>Representative Notes - Which were entered while submitting the customer sheet</li>
+<li>Lead - Name of the lead appears</li>
+<li>Not completed - Counter of the Unfinished &amp; not open containers which comes under this status. </li>
+<li>Cancelled - Counter of the container which comes under this status</li>
+<li>Completed - Counter of the container which comes under this status</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The next section include container type with following hierarchy outbound, live load, drop with total count on each section if available. The following column appear for the container type<ul>
+<li>Origin - by whom it was added</li>
+<li>Fixed container parameters appears which are followed in the listed hierarchy Door, Container Number, Cases, Items/Sort</li>
+<li>After The fixed containers, additional or customer parameters if any will appear in the columns</li>
+<li>Status<ul>
+<li>Cancelled - When the container has been moved to cancel state. Can move before or after the work done has been completed</li>
+<li>Completed - When the container has been moved to complete state. All work done has to be completed</li>
+<li>Unfinished - When the container has been moved to unfinished state, has work remaining to be done. Remaining work is scheduled to be completed in upcoming days</li>
+<li>Not Open - When the container has been moved to Not open state. Can move before or after all the work done has been completed</li>
+</ul>
+</li>
+<li>Lumper Note<ul>
+<li>As you click on the button, a pop up open to view the details of the scheduled notes</li>
+<li>If there any notes associated, the button will turn blue and if not then grey</li>
+<li>For completed, only lumper note for customer will appear</li>
+<li>For Cancelled &amp; not open, only group note will appear</li>
+<li>For unfinished, both group note &amp; lumper note for customer will appear</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
 <h4 id="customer-sheet-report-item-selection"><strong>Customer Sheet Report: Item Selection</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing customer sheet report or generate it. <img alt="alt text" src="../image-103.png" /></p>
+<p>The page is divided into separate section which includes the selection section and the associated filtered results 
+1. The first includes the selection of building through the following
+    - Radio buttons for PDF &amp; excel button with generate &amp; generate all button
+        - Generate &amp; generate summary button would automatically download the selected format (pdf or excel) 
+        - View button would redirect to the detail page <img alt="alt text" src="../image-104.png" />
+        - Buttons will be activate once you select the desired building or tab
+        - Generate All button appears when there are multiple pages in a report
+    - Select customer by entering the name, related information will appear in the dropdown. select the desired from the dropdown
+    - Select desired state &amp; city
+    - Select teh desired building from the dropdown. Buildings appear based on the above filters applied
+    - Select the desired shift &amp; departments
+    - Select the date range (start &amp; end) from the calendar pop up
+        - By default, the current date appears <img alt="alt text" src="../image-102.png" />
+        - Start &amp; End date cannot be same
+2. As per the selected filters, information starts to appear in the next section which is again divided into two tabs. If no information is available, no records found message appears
+    - First Tab - Select Building - All available shifts &amp; departments will appear
+        - The following columns appear
+            - Customer - Name of the customer will appear
+            - Building - building name will appear
+            - Shift - shift name will appear
+            - Department - department name will appear
+            - Leads - Lead name will appear
+    - You can either select any particular row or can select all
+    - Second Tab - select shift / department - Can select specific shift or departments for buildings
+        - - The following columns appear
+            - Customer - Name of the customer will appear
+            - Building - building name will appear
+            - Shift - shift name will appear
+            - Department - department name will appear
+            - Leads - Lead name will appear
+    - You can either select any particular row or can select all
+3. Hierarchy Order for listing is as followed 
+    - Customer Name (alphabetical order) 
+    - Building Name  (alphabetical order) 
+    - Shift (Day, Swing, Night) 
+    - Department  (Operations, Receiving, Shipping) </p>
+<hr />
 <h2 id="lumper-sheet">Lumper Sheet</h2>
 <hr />
 <p>When there are no lumpers sheet submitted by lead for a building's schedule. The information in table appears as blank with no records as seen in the image. Can view only for the building the DM is assigned to. </p>
@@ -1798,12 +1888,559 @@ Quick Hands Logistics&quot;
 </li>
 </ol>
 <h4 id="lumper-sheet-report-view"><strong>Lumper Sheet Report - View</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing lumper sheet report or generate it. <img alt="alt text" src="../image-105.png" /></p>
+<ol>
+<li>Report Button - Appears on right side which redirects the user for generating the report</li>
+<li>The page is divided into separate section which includes the building details with ready to export functionality and for the container type details</li>
+<li>The first section - Building details consists of <ul>
+<li>Radio buttons for PDF &amp; excel button with generate &amp; generate all button<ul>
+<li>Generate button would automatically download the selected format (pdf or excel) </li>
+<li>Generate All button appears when there are multiple pages in a report</li>
+</ul>
+</li>
+<li>Building details which includes<ul>
+<li>Building Name - with the complete address </li>
+<li>Work date -  Complete day of work with the day, month date, year. Does not consists of abbreviations for months</li>
+<li>Customer Name</li>
+<li>Shift - Shift of the building</li>
+<li>Shift Time - When we create a building, the time for the shift appears</li>
+<li>Manager - Name of the manager</li>
+<li>Department - full name of the department appears</li>
+<li>Supervisor - Name of the supervisor</li>
+<li>Lead - Name of the lead appears</li>
+<li>Containers Unfinished - completed - Counter of the Unfinished &amp; not open containers which comes under this status. </li>
+<li>Containers Completed - Count of the container which comes under this status "complete"</li>
+<li>Workers - Count of workers (lead &amp; lumper). Includes requested &amp; temporary too</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The next section include container type with following hierarchy completed &amp; unfinished with employee name(lead, lumper, requested lumper &amp; temporary lumper), ID and Role(for temporary &amp; requested [T] &amp; [R] appears). The following column appears.<ul>
+<li>Status - Only complete &amp; unfinished appear</li>
+<li>Type - Type of container is stated</li>
+<li>Door - Information added by lead for entering container parameters</li>
+<li>Container - Information added by lead for entering container parameters</li>
+<li>Cases - Information added by lead for entering container parameters</li>
+<li>Items/Sort - Information added by lead for entering container parameters</li>
+<li>Additional parameters - Information added by lead for entering additional container parameters</li>
+<li>Start time - start time entered for the scheduled lumper</li>
+<li>End Time - start time entered for the scheduled lumper</li>
+<li>Total Time - total time is calculated based on the start &amp; end time</li>
+<li>Total Pause - pause time entered for the scheduled lumpers. If lead hasn't filled then 0 appears</li>
+<li>Waiting time - waiting time entered for the scheduled lumpers. If lead hasn't filled then 0 appears</li>
+<li>Work Done<ul>
+<li>If work done is less than 100%, a pop up opens which shows the details of who worked based on percentage. The info should add up to 100%</li>
+</ul>
+</li>
+<li>Lumper Notes<ul>
+<li>As you click on the button, a pop up open to view the details of the scheduled notes</li>
+<li>If there any notes associated, the button will turn blue and if not then grey</li>
+<li>For completed, only lumper note for customer will appear</li>
+<li>For unfinished, both group note &amp; lumper note for customer will appear</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
 <h4 id="lumper-sheet-report-item-selection"><strong>Lumper Sheet Report: Item Selection</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing lumper sheet report or generate it. <img alt="alt text" src="../image-106.png" /></p>
+<p>The page is divided into separate section which includes the selection section and the associated filtered results 
+1. The first includes the selection of building through the following
+    - Radio buttons for PDF &amp; excel button with generate &amp; generate all button
+        - Generate &amp; generate summary button would automatically download the selected format (pdf or excel) 
+        - View button would redirect to the detail page
+        - Buttons will be activate once you select the desired row on tab
+        - Generate All button appears when there are multiple pages in a report
+    - Select customer by entering the name, related information will appear in the dropdown. select the desired from the dropdown
+    - Select desired state &amp; city
+    - Select the desired building from the dropdown. Buildings appear based on the above filters applied
+    - Select the desired shift &amp; departments
+    - Select the date range (start &amp; end) from the calendar pop up
+        - By default, the current date appears 
+        - Start &amp; End date can be same
+2. As per the selected filters, information starts to appear in the next section which is again divided into three tabs. If no information is available, no records found message appears
+    - First Tab - Select Building - All available shifts &amp; departments will appear
+        - The following columns appear
+            - Customer - Name of the customer will appear
+            - Building - building name will appear
+            - Shift - shift name will appear
+            - Department - department name will appear
+            - Leads - Lead name will appear
+    - You can either select any particular row or can select all
+    - Second Tab - select shift / department - Can select specific shift or departments for buildings
+        - The following columns appear
+            - Customer - Name of the customer will appear
+            - Building - building name will appear
+            - Shift - shift name will appear
+            - Department - department name will appear
+            - Leads - Lead name will appear
+    - You can either select any particular row or can select all
+    - Third Tab - Select worker - Shows the employee information who have worked on the containers
+        - The following columns appear
+            - Name - Name of the employee will appear
+            - Role 
+                - Lead &amp; lumper will appear
+                - For temporary &amp; requested [T] &amp; [R] appears with their role
+            - Customer - Name of the customer will appear
+            - Building - building name will appear
+            - Shift - shift name will appear
+            - Department - department name will appear
+    - You can either select any particular row or can select all
+3. Hierarchy order for listing within each column is as followed 
+    - Customer   (alphabetical) 
+    - Building      (alphabetical) 
+    - Shift             (Day, Swing, Night) 
+    - Department  (Operations, Receiving, Shipping) 
+    - Leads            (alphabetical order) 
+    - Lumpers        (alphabetical order)
+    - role   (lead, Lumpers)
+    - name  (alphabetical order) </p>
+<hr />
 <h2 id="reports">Reports</h2>
+<hr />
+<h4 id="landing-page_7"><strong>Landing Page</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page for whom you can download and view the report. <img alt="alt text" src="../image-120.png" /></p>
+<p>Work reports for the following section appears which includes their detail page and ability to generate reports when clicked</p>
+<ol>
+<li>Dashboard Schedules</li>
+<li>Time Clock</li>
+<li>Lumper Sheet</li>
+<li>Customer Sheet</li>
+<li>Empty Container</li>
+<li>Customers</li>
+<li>Employees</li>
+</ol>
+<h4 id="dashboard-schedule-report-item-selection"><strong>Dashboard Schedule Report: Item Selection</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing dashboard schedule report or generate it. <img alt="alt text" src="../image-107.png" /></p>
+<p>The page is divided into separate section which includes the selection section and the associated filtered results </p>
+<ol>
+<li>The first includes the selection of building<ul>
+<li>Radio buttons for PDF &amp; excel button with generate &amp; generate all button<ul>
+<li>Generate &amp; generate summary button would automatically download the selected format (pdf or excel) </li>
+<li>View button would redirect to the detail page</li>
+<li>Buttons will be activate once you select the desired row on tab</li>
+<li>Generate All button appears when there are multiple pages in a report</li>
+</ul>
+</li>
+<li>Select the date range (start &amp; end) from the calendar pop up<ul>
+<li>By default, the current date appears </li>
+<li>Start &amp; End date can be same</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>As per the selected filters, information starts to appear in the next section which is again divided into three tabs. If no information is available, no records found message appears<ul>
+<li>First Tab - Container Per Day<ul>
+<li>The informative message appears</li>
+<li>The following columns appear before the table starts<ul>
+<li>Building - building name will appear</li>
+<li>Shift - shift name will appear</li>
+<li>Department - department name will appear</li>
+<li>Leads - Lead name will appear</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Second Tab - Container per shift / department<ul>
+<li>Can select specific shift or departments for buildings</li>
+<li>The informative message appear before the table starts</li>
+<li>The following columns appear<ul>
+<li>Building - building name will appear</li>
+<li>Shift - shift name will appear</li>
+<li>Department - department name will appear</li>
+<li>Leads - Lead name will appear</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can either select any particular row or can select all</li>
+</ul>
+</li>
+</ol>
+<h4 id="dashboard-schedules-report-view"><strong>Dashboard Schedules Report: View</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing dashboard schedules report or generate it. <img alt="alt text" src="../image-108.png" /></p>
+<ol>
+<li>The page is divided into separate section which includes the building details with ready to export functionality and for the container type details</li>
+<li>The first section - Building details consists of <ul>
+<li>Radio buttons for PDF &amp; excel button with generate &amp; generate all button<ul>
+<li>Generate button would automatically download the selected format (pdf or excel) </li>
+<li>Generate All button appears when there are multiple pages in a report</li>
+</ul>
+</li>
+<li>Building details which includes<ul>
+<li>Building Name - with the complete address </li>
+<li>Customer Name</li>
+<li>Shift - Shift of the building</li>
+<li>Manager - Name of the manager</li>
+<li>Department - full name of the department appears</li>
+<li>Supervisor - Name of the supervisor</li>
+<li>Reports Date Range - The selected date range will appear in month, date &amp; year format</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The next section includes the various dates as per the range selected. The following column appears.<ul>
+<li>Shift - Shift of the building</li>
+<li>Department - full name of the department appears</li>
+<li>Lead - Name of the lead appears</li>
+<li>Container Type - Type of container is stated in abbreviated with their count</li>
+<li>Total Container - Count of total containers appear</li>
+<li>Created By - Name of the person created a schedule</li>
+</ul>
+</li>
+</ol>
+<h4 id="time-clock-report-item-selection"><strong>Time Clock Report: Item Selection</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing time clock sheet report or generate it. <img alt="alt text" src="../image-124.png" /></p>
+<p>The page is divided into separate section which includes the selection section and the associated filtered results </p>
+<ol>
+<li>The first includes the selection of building through the following<ul>
+<li>Radio buttons for PDF &amp; excel button with generate &amp; generate all button<ul>
+<li>Generate &amp; generate summary button would automatically download the selected format (pdf or excel) </li>
+<li>View button would redirect to the detail page</li>
+<li>Buttons will be activate once you select the desired row on tab</li>
+<li>Generate All button appears when there are multiple pages in a report</li>
+</ul>
+</li>
+<li>Select customer from the dropdown. </li>
+<li>Select desired state &amp; city</li>
+<li>Select the desired building from the dropdown. Buildings appear based on the above filters applied</li>
+<li>Select the desired shift &amp; departments</li>
+<li>Select the date range (start &amp; end) from the calendar pop up<ul>
+<li>By default, the current date appears </li>
+<li>Start &amp; End date can be same</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>As per the selected filters, information starts to appear in the next section which is again divided into three tabs. If no information is available, no records found message appears<ul>
+<li>First Tab - Select Building - All available shifts &amp; departments will appear<ul>
+<li>The following columns appear<ul>
+<li>Customer - Name of the customer will appear</li>
+<li>Building - building name will appear</li>
+<li>Shift - shift name will appear</li>
+<li>Department - department name will appear</li>
+<li>Leads - Lead name will appear</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can either select any particular row or can select all</li>
+<li>Second Tab - select shift / department - Can select specific shift or departments for buildings<ul>
+<li>The following columns appear<ul>
+<li>Customer - Name of the customer will appear</li>
+<li>Building - building name will appear</li>
+<li>Shift - shift name will appear</li>
+<li>Department - department name will appear</li>
+<li>Leads - Lead name will appear</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can either select any particular row or can select all</li>
+<li>Third Tab - Select worker - Shows the employee information who have worked on the containers<ul>
+<li>The following columns appear<ul>
+<li>Name - Name of the employee will appear</li>
+<li>Role <ul>
+<li>Lead &amp; lumper will appear</li>
+<li>For temporary &amp; requested [T] &amp; [R] appears with their role</li>
+</ul>
+</li>
+<li>Customer - Name of the customer will appear</li>
+<li>Building - building name will appear</li>
+<li>Shift - shift name will appear</li>
+<li>Department - department name will appear</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can either select any particular row or can select all</li>
+</ul>
+</li>
+<li>Hierarchy order for listing within each column is as followed <ul>
+<li>Customer   (alphabetical) </li>
+<li>Building      (alphabetical) </li>
+<li>Shift             (Day, Swing, Night) </li>
+<li>Department  (Operations, Receiving, Shipping) </li>
+<li>Leads            (alphabetical order) </li>
+<li>Lumpers        (alphabetical order)</li>
+</ul>
+</li>
+</ol>
+<h4 id="time-clock-report-view"><strong>Time Clock Report: View</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing time clock report or generate it.  <img alt="alt text" src="../image-109.png" /></p>
+<ol>
+<li>The page is divided into separate section which includes the building details with ready to export functionality and for the container type details</li>
+<li>The first section - Building details consists of <ul>
+<li>Radio buttons for PDF &amp; excel button with generate &amp; generate all button<ul>
+<li>Generate button would automatically download the selected format (pdf or excel) </li>
+<li>Generate All button appears when there are multiple pages in a report</li>
+</ul>
+</li>
+<li>Building details which includes<ul>
+<li>Building Name - with the complete address </li>
+<li>Customer Name</li>
+<li>Manager - Name of the manager</li>
+<li>Supervisor - Name of the supervisor</li>
+<li>Shift - Shift of the building</li>
+<li>Shift Time - When we create a building, the time for the shift appears</li>
+<li>Department - full name of the department appears</li>
+<li>Reports Date Range - The selected date range will appear in month, date &amp; year format</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The next section includes the various dates as per the range selected. The following column appears.<ul>
+<li>Name - Name of the employee for which the attendance is clocked in for</li>
+<li>ID - Employee Id is shown</li>
+<li>Role - The role of the clocked in employee</li>
+<li>Clocked In - When he clocks into the portal</li>
+<li>Clocked Out - When he clocks out of the portal</li>
+<li>Total time - calculated between the clock in &amp; clock out time</li>
+<li>Lunch Start - Time when lunch break started</li>
+<li>Lunch end - Time when lunch break was end</li>
+<li>Total Lunch - calculated between the lunch start &amp; lunch end time</li>
+<li>Reg Time</li>
+<li>Work Time</li>
+<li>OT</li>
+<li>DOT</li>
+<li>Signature<ul>
+<li>Pending - When the customer hasn't signed the lumper sheet</li>
+<li>Signed - When the customer has signed the lumper sheet</li>
+</ul>
+</li>
+<li>Note - If the notes were saved while adding the attendance will appear in and the button will turn blue or else grey</li>
+<li>If no information is there for time then -- appears</li>
+</ul>
+</li>
+<li>Hierarchy order for listing within each column is as followed <ul>
+<li>role   (lead, Lumpers)</li>
+<li>name  (alphabetical order) </li>
+</ul>
+</li>
+</ol>
+<h4 id="lumper-sheet-report-item-selection_1"><strong>Lumper Sheet Report: Item Selection</strong></h4>
+<h4 id="customer-sheet-report-item-selection_1"><strong>Customer Sheet Report: Item Selection</strong></h4>
+<h4 id="empty-container-report-item-selection"><strong>Empty Container Report: Item Selection</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing empty container report or generate it. To download for the container with status as complete <img alt="alt text" src="../image-106.png" /></p>
+<p>The page is divided into separate section which includes the selection section and the associated filtered results</p>
+<ol>
+<li>The first includes the selection of building through the following<ul>
+<li>Radio buttons for PDF &amp; excel button with generate &amp; generate all button<ul>
+<li>Generate &amp; generate summary button would automatically download the selected format (pdf or excel) </li>
+<li>View button would redirect to the detail page</li>
+<li>Buttons will be activate once you select the desired row on tab</li>
+<li>Generate All button appears when there are multiple pages in a report</li>
+</ul>
+</li>
+<li>Select customer by entering the name, related information will appear in the dropdown. select the desired from the dropdown</li>
+<li>Select desired state &amp; city</li>
+<li>Select the desired building from the dropdown. Buildings appear based on the above filters applied</li>
+<li>Select the desired shift &amp; departments</li>
+<li>Select the date range (start &amp; end) from the calendar pop up<ul>
+<li>By default, the current date appears </li>
+<li>Start &amp; End date can be same</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>As per the selected filters, information starts to appear in the next section which is again divided into three tabs. If no information is available, no records found message appears<ul>
+<li>First Tab - Select Building - All available shifts &amp; departments will appear<ul>
+<li>The following columns appear <ul>
+<li>Customer - Name of the customer will appear</li>
+<li>Building - building name will appear</li>
+<li>Shift - shift name will appear</li>
+<li>Department - department name will appear</li>
+<li>Leads - Lead name will appear</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can either select any particular row or can select all</li>
+<li>Second Tab - select shift / department - Can select specific shift or departments for buildings<ul>
+<li>The following columns appear<ul>
+<li>Customer - Name of the customer will appear</li>
+<li>Building - building name will appear</li>
+<li>Shift - shift name will appear</li>
+<li>Department - department name will appear</li>
+<li>Leads - Lead name will appear</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can either select any particular row or can select all</li>
+<li>Third Tab - Find Container - Shows the employee information who have worked on the containers<ul>
+<li>The following columns appear<ul>
+<li>Date - The date on which the container was marked as completed. Follows the format as year, month, date</li>
+<li>Customer - Name of the customer will appear</li>
+<li>Building - building name will appear</li>
+<li>Shift - shift name will appear</li>
+<li>Department - department name will appear</li>
+<li>Leads - Name of the lead will appear</li>
+<li>Container - container details entered for the completed container will appear</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can either select any particular row or can select all</li>
+</ul>
+</li>
+<li>Hierarchy Order in listing is as followed<ul>
+<li>Shift - Day, Swing, Night</li>
+<li>Department - Operations, Receiving, Shipping</li>
+</ul>
+</li>
+</ol>
+<h4 id="empty-containers-report-view"><strong>Empty Containers Report: View</strong></h4>
+<p>The page is divided into separate section which includes the building details with ready to export functionality and for the container type details <img alt="alt text" src="../image-123.png" /></p>
+<ol>
+<li>The first section - Building details consists of <ul>
+<li>Radio buttons for PDF &amp; excel button with generate &amp; generate all button<ul>
+<li>Generate button would automatically download the selected format (pdf or excel) </li>
+<li>Generate All button appears when there are multiple pages in a report</li>
+</ul>
+</li>
+<li>Building details which includes<ul>
+<li>Building Name - with the complete address </li>
+<li>Customer Name</li>
+<li>Shift - Shift of the building</li>
+<li>Manager - Name of the manager</li>
+<li>Department - full name of the department appears</li>
+<li>Supervisor - Name of the supervisor</li>
+<li>Reports Date Range - The selected date range will appear in month, date &amp; year format</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The next section includes the empty container title with count type for containers with complete status. The following column appears.<ul>
+<li>Date - full date available with day, month, date &amp; year </li>
+<li>Door - Information added by lead for entering container parameters</li>
+<li>Container - Information added by lead for entering container parameters</li>
+<li>Time Emptied - When the container was given a complete status</li>
+</ul>
+</li>
+<li>Hierarchy order for listing is<ul>
+<li>Date (chronological order)   </li>
+<li>Time Emptied (alphabetical order )</li>
+<li>Door         (alphabetical order, number order) </li>
+<li>Container#      (alphabetical order, number order) "</li>
+</ul>
+</li>
+</ol>
+<h4 id="customer-list-item-selection"><strong>Customer List: Item Selection</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing customer lists item selection or generate it. <img alt="alt text" src="../image-122.png" /></p>
+<p>The page is divided into separate section which includes the selection section and the associated filtered results </p>
+<ol>
+<li>The first includes the selection of building through the following<ul>
+<li>Radio buttons for PDF &amp; excel button with generate &amp; generate all button<ul>
+<li>Generate &amp; generate summary button would automatically download the selected format (pdf or excel) </li>
+<li>Buttons will be activate once you select the desired row on tab</li>
+<li>Generate All button appears when there are multiple pages in a report</li>
+</ul>
+</li>
+<li>Select desired state &amp; city</li>
+<li>Able to filter the list by dates the date range (start &amp; end) from the calendar pop up<ul>
+<li>By default, All dates radio button is selected</li>
+<li>Can select year</li>
+<li>Can select the custom date range (start &amp; end) from the calendar pop up<ul>
+<li>By default, the current date appears </li>
+<li>Start &amp; End date can be same</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>As per the selected filters, information starts to appear in the next section which is again divided into two tabs. If no information is available, no records found message appears<ul>
+<li>First Tab - Active - All active customers will appear<ul>
+<li>The following columns appear <ul>
+<li>Customer - Name of the customer will appear</li>
+<li>Building - count of the building</li>
+<li>Managers - count of the manager</li>
+<li>Supervisor - count of the supervisor</li>
+<li>Active Since - date the customer profile is active since</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can either select any particular row or can select all</li>
+<li>Second Tab - Non Active - All non active employees will appear <ul>
+<li>The following columns appear<ul>
+<li>Customer - Name of the customer will appear</li>
+<li>Building - count of the building</li>
+<li>Managers - count of the manager</li>
+<li>Supervisor - count of the supervisor</li>
+<li>Non Active Since - date the customer profile was made non active</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can either select any particular row or can select all</li>
+</ul>
+</li>
+</ol>
+<h4 id="employees-list-item-selection"><strong>Employees List: Item Selection</strong></h4>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing employees lists item selection or generate it. <img alt="alt text" src="../image-121.png" /></p>
+<p>The page is divided into separate section which includes the selection section and the associated filtered results </p>
+<ol>
+<li>The first includes the selection of building through the following<ul>
+<li>Radio buttons for PDF &amp; excel button with generate &amp; generate all button<ul>
+<li>Generate &amp; generate summary button would automatically download the selected format (pdf or excel) </li>
+<li>Buttons will be activate once you select the desired row on tab</li>
+<li>Generate All button appears when there are multiple pages in a report</li>
+</ul>
+</li>
+<li>Customer - Name of the customer will appear</li>
+<li>Building - building name will appear</li>
+<li>Role - All roles of the employee will appear and can select from the dropdown</li>
+<li>Select desired state &amp; city</li>
+<li>Able to filter the list by dates the date range (start &amp; end) from the calendar pop up<ul>
+<li>By default, All dates radio button is selected</li>
+<li>Can select year</li>
+<li>Can select the custom date range (start &amp; end) from the calendar pop up<ul>
+<li>By default, the current date appears </li>
+<li>Start &amp; End date can be same</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>As per the selected filters, information starts to appear in the next section which is again divided into two tabs. If no information is available, no records found message appears<ul>
+<li>First Tab - Active - All active employees will appear with the total count in header<ul>
+<li>The following columns appear <ul>
+<li>Name - name of the employee will appear</li>
+<li>ID - Unique ID associated with employee will appear</li>
+<li>Phone - Unique phone number associated with employee will appear</li>
+<li>Email - Unique email associated with employee will appear</li>
+<li>Role - Role of the employee appears</li>
+<li>Work Location - The address sof the building employee is assigned to appears</li>
+<li>Active Since - date the customer profile is active since</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can either select any particular row or can select all</li>
+<li>Second Tab - Non Active - All non active employees will appear with the total count in header<ul>
+<li>The following columns appear<ul>
+<li>Name - name of the employee will appear</li>
+<li>ID - Unique ID associated with employee will appear</li>
+<li>Phone - Unique phone number associated with employee will appear</li>
+<li>Email - Unique email associated with employee will appear</li>
+<li>Role - Role of the employee appears</li>
+<li>Work Location - The address sof the building employee is assigned to appears</li>
+<li>Non Active Since - date the customer profile was made non active</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can either select any particular row or can select all</li>
+</ul>
+</li>
+</ol>
 <hr />
 <h2 id="temporary-lumper">Temporary Lumper</h2>
 <hr />
-<h4 id="landing-page_7"><strong>Landing Page</strong></h4>
+<h4 id="landing-page_8"><strong>Landing Page</strong></h4>
 <ul>
 <li>
 <p>When there are no lead and lumpers scheduled as temporary for a building only for the building the DM is assigned to. The information in table appears as blank with no records as seen in the image. <img alt="Alt text" src="../image-80.png" /></p>
@@ -1904,8 +2541,7 @@ Quick Hands Logistics&quot;
 </ul>
 </li>
 <li>Widgets </li>
-<li>State - </li>
-<li>City - </li>
+<li>Select state &amp; city</li>
 <li>Status<ul>
 <li>Pending - When the request hasn't been fulfilled</li>
 <li>Complete - When the request has been fulfilled </li>
@@ -1949,7 +2585,145 @@ Quick Hands Logistics&quot;
 <li>Cancel - Blue button to deny the request. The assigned employee will be unassigned. Clicking on yes, would reject the request.<img alt="Alt text" src="../image-87.png" /></li>
 </ul>
 <h2 id="correction-request">Correction Request</h2>
-<hr /></div>
+<hr />
+<h4 id="landing-page_9"><strong>Landing page</strong></h4>
+<p>When a requests for corrections is made through lead only for the building the DM is assigned to, the requests appear on the web portal under correction requests. As the new request has been made, a red count appear in the side navigating tab and a rot dot appears beside the new correction request on it's landing page.  </p>
+<p>When there are no correction requests submitted by the lead. "Message when there is no information to display is based on status; For no [Pending Corrections, Corrections Made, Corrections Denied]. The information in table appears as blank with no records as seen in the image.<img alt="alt text" src="../image-110.png" /></p>
+<p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as to make a correction. Below are the widgets &amp; landing page information as it appears on the landing page</p>
+<ol>
+<li>Search - search bars which throws result for the below two functions.<ul>
+<li>Customer</li>
+<li>Search through the name of Customer for whom the request is generated, results will start populating in the table</li>
+<li>If no information is available, then no records will be shown</li>
+<li>Search District manager, Lead, Correction For</li>
+<li>Search through the name building's District manager and lead for whom the request is generated, results will start populating in the table</li>
+<li>If no information is available, then no records will be shown</li>
+</ul>
+</li>
+<li>TThe hierarchy followed for information in listing is<ul>
+<li>Work Date - chronological order </li>
+<li>Customer - alphabetical order </li>
+<li>Building - alphabetical order </li>
+<li>Shift - Day, Swing, Night</li>
+<li>Department - Operations, Receiving, Shipping</li>
+<li>Lead - alphabetical order</li>
+<li>Correction for - alphabetical order</li>
+</ul>
+</li>
+<li>The page is divided based on their status into three sections which are as followed and shown in the image with following columns for all.<img alt="alt text" src="../image-117.png" /><ul>
+<li>Work date - when the work has been completed by lead on the container. Used abbreviated month name</li>
+<li>Second column changes based on status<ul>
+<li>Pending correction: Request Made- When the request has been made by lead</li>
+<li>Corrections Made: Approved On - When the correction were submitted</li>
+<li>Correction Denied: Not Approved On - When the correction request was denied</li>
+</ul>
+</li>
+<li>Customer - Customer name</li>
+<li>Building - Building Name</li>
+<li>Shift - Shift of the building</li>
+<li>Department - Department of the building</li>
+<li>District Manager - Name of the DM assigned  to building</li>
+<li>Lead - Assigned main lead name comes on the page</li>
+<li>Correction For - By whom the request has been submitted by</li>
+<li>Issue - container type appears</li>
+<li>Status<ul>
+<li>Pending - When the request has been initiated</li>
+<li>Updated - After after making the desired correction for a request and are submitted</li>
+<li>Rejected - when the admin or DM denies the correction request</li>
+<li>Cancelled by lead - wen request has been canceled through lead </li>
+</ul>
+</li>
+<li>Action<ul>
+<li>Note<ul>
+<li>Lead correction note pop up opens up which shows the information of the lead such as its container parameters &amp; time clock information <img alt="alt text" src="../image-118.png" /></li>
+<li>Split container button when clicked shows information about the employees who have worked on the container  </li>
+</ul>
+</li>
+<li>Profile Card<ul>
+<li>Opens a pop up for viewing the contact's information <img alt="alt text" src="../image-119.png" /></li>
+</ul>
+</li>
+<li>Edit <ul>
+<li>redirects you to make correction page</li>
+<li>Only available for pending requests</li>
+</ul>
+</li>
+<li>Deny<ul>
+<li>A confirmation pop up opens, once you click on yes, a success message appears &amp; redirects you to the listing page. <img alt="alt text" src="../image-111.png" /></li>
+<li>Only available for pending requests</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Pending Correction: with the count of pending requests for whom no action is taken. When lead requests for correction, it comes under this section<ul>
+<li>Request in 'Correction Made' and 'Correction Denied' tables should display for 14 days from when request was approved/denied.</li>
+</ul>
+</li>
+<li>Correction Made: with the count of requests for whom action is taken &amp; submitted. When admin or DM makes the desired correction as stated by lead, then after submission requests move to this section. <ul>
+<li>Once clicked on the edit button, redirect us to the make correction page. <img alt="alt text" src="../image-115.png" /><ul>
+<li>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page on how to make a correction.            </li>
+<li>In the first section building info appears with building name, address &amp; associated main lead, customer and its contacts name, shift &amp; shift timings and work date. Only the contacts that have a permission for the corresponding building appears</li>
+<li>In the second section employee information appears with the name, employee and signature in the title of the table followed by columnar information of status, Type, Container Parameters and notes for customer</li>
+<li>In the third section, information entered by the lead while creating a request is shown</li>
+</ul>
+</li>
+<li>All container parameters and notes saved for customer can be edited. <img alt="alt text" src="../image-114.png" /></li>
+<li>Has the correction been approved by customer pop up opens <img alt="alt text" src="../image-112.png" /></li>
+<li>Once you click on yes for above pop up, another pop up opens to make the correction. Action made on this page reflect on the portal under pending status once you leave or discard the changes by not submitting the changes  <img alt="alt text" src="../image-113.png" /></li>
+<li>Submit button stays disable until changes are made. The changes are reflected to lead, admin &amp; DM once they are submitted. Then the requests is move to corrections made section <img alt="alt text" src="../image-116.png" /></li>
+</ul>
+</li>
+<li>Denied Corrections: with the count of requests which were denied by Admin or DM. </li>
+<li>
+<p>Lead gets an email notification after a correction request is approved or denied. </p>
+<pre><code>From:           QHL  Support
+Subject:       Correction Request Update
+</code></pre>
+<hr />
+<pre><code>Hi [Lead's First Name],
+
+Your correction request was Approved.
+
+DETAILS
+Work Date:                       Thursday, May 6, 2021
+Container:                         Outbound;  abcdekmlm 1                        (this is container type &amp; #)
+</code></pre>
+<hr />
+<pre><code>If approve show all corrections made: 
+CORRECTIONS
+Container Number:        Before:  abcdek222 M                          Correction: abcdekmlm 1  
+Cases:                                 Before:  1000                                         Correction: 2222 
+Reminder: Please ensure  lumper's Work Done is updated as well. (This message appears only when cases is edited)
+
+Weight:                               Before: 52                                              Correction: 30
+</code></pre>
+<hr />
+<pre><code>Thanks,
+Quick Hands Logistics
+</code></pre>
+</li>
+<li>
+<p>If the correction request is not approved, the following email notification is shared
+        From:         QHL  Support
+        Subject:       Correction Request Update</p>
+</li>
+</ol>
+<hr />
+<pre><code>    Hi [Lead's First Name],
+
+    Your correction request was Not Approved.
+
+    What is the Correction?
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</code></pre>
+<hr />
+<pre><code>    Please contact your DM if you have any questions or concerns.
+
+    Thanks,
+    Quick Hands Logistics
+</code></pre></div>
             </div>
         </div>
 

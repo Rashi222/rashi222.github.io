@@ -1827,7 +1827,12 @@ Quick Hands Logistics&quot;
             - Shift - shift name will appear
             - Department - department name will appear
             - Leads - Lead name will appear
-    - You can either select any particular row or can select all</p>
+    - You can either select any particular row or can select all
+3. Hierarchy Order for listing is as followed 
+    - Customer Name (alphabetical order) 
+    - Building Name  (alphabetical order) 
+    - Shift (Day, Swing, Night) 
+    - Department  (Operations, Receiving, Shipping) </p>
 <hr />
 <h2 id="lumper-sheet">Lumper Sheet</h2>
 <hr />
@@ -1853,6 +1858,19 @@ Quick Hands Logistics&quot;
 <li>Widgets <ul>
 <li>Shift - Can select the shifts from the dropdown</li>
 <li>Department - can select departments from the dropdown</li>
+</ul>
+</li>
+<li>Hierarchy Order for listing is as followed<ul>
+<li>Date (Reverse Chronological order)</li>
+<li>Customer Name (Alphabetical order) </li>
+<li>Building Name (Alphabetical order) </li>
+<li>Shift (Day, Swing, Night) </li>
+<li>Department (Operations, Receiving, Shipping)</li>
+</ul>
+</li>
+<li>Container Hierarchy Order in listing<ul>
+<li>Complete containers</li>
+<li>Unfinished containers.</li>
 </ul>
 </li>
 <li>The table consists of following columns:<ul>
@@ -1978,7 +1996,16 @@ Quick Hands Logistics&quot;
             - Building - building name will appear
             - Shift - shift name will appear
             - Department - department name will appear
-    - You can either select any particular row or can select all</p>
+    - You can either select any particular row or can select all
+3. Hierarchy order for listing within each column is as followed 
+    - Customer   (alphabetical) 
+    - Building      (alphabetical) 
+    - Shift             (Day, Swing, Night) 
+    - Department  (Operations, Receiving, Shipping) 
+    - Leads            (alphabetical order) 
+    - Lumpers        (alphabetical order)
+    - role   (lead, Lumpers)
+    - name  (alphabetical order) </p>
 <hr />
 <h2 id="reports">Reports</h2>
 <hr />
@@ -2140,6 +2167,15 @@ Quick Hands Logistics&quot;
 <li>You can either select any particular row or can select all</li>
 </ul>
 </li>
+<li>Hierarchy order for listing within each column is as followed <ul>
+<li>Customer   (alphabetical) </li>
+<li>Building      (alphabetical) </li>
+<li>Shift             (Day, Swing, Night) </li>
+<li>Department  (Operations, Receiving, Shipping) </li>
+<li>Leads            (alphabetical order) </li>
+<li>Lumpers        (alphabetical order)</li>
+</ul>
+</li>
 </ol>
 <h4 id="time-clock-report-view"><strong>Time Clock Report: View</strong></h4>
 <p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as viewing time clock report or generate it.  <img alt="alt text" src="../image-109.png" /></p>
@@ -2185,6 +2221,11 @@ Quick Hands Logistics&quot;
 </li>
 <li>Note - If the notes were saved while adding the attendance will appear in and the button will turn blue or else grey</li>
 <li>If no information is there for time then -- appears</li>
+</ul>
+</li>
+<li>Hierarchy order for listing within each column is as followed <ul>
+<li>role   (lead, Lumpers)</li>
+<li>name  (alphabetical order) </li>
 </ul>
 </li>
 </ol>
@@ -2254,6 +2295,11 @@ Quick Hands Logistics&quot;
 <li>You can either select any particular row or can select all</li>
 </ul>
 </li>
+<li>Hierarchy Order in listing is as followed<ul>
+<li>Shift - Day, Swing, Night</li>
+<li>Department - Operations, Receiving, Shipping</li>
+</ul>
+</li>
 </ol>
 <h4 id="empty-containers-report-view"><strong>Empty Containers Report: View</strong></h4>
 <p>The page is divided into separate section which includes the building details with ready to export functionality and for the container type details <img alt="alt text" src="../image-123.png" /></p>
@@ -2281,6 +2327,13 @@ Quick Hands Logistics&quot;
 <li>Door - Information added by lead for entering container parameters</li>
 <li>Container - Information added by lead for entering container parameters</li>
 <li>Time Emptied - When the container was given a complete status</li>
+</ul>
+</li>
+<li>Hierarchy order for listing is<ul>
+<li>Date (chronological order)   </li>
+<li>Time Emptied (alphabetical order )</li>
+<li>Door         (alphabetical order, number order) </li>
+<li>Container#      (alphabetical order, number order) "</li>
 </ul>
 </li>
 </ol>
@@ -2555,7 +2608,7 @@ Quick Hands Logistics&quot;
 <hr />
 <h4 id="landing-page_10"><strong>Landing page</strong></h4>
 <p>When a requests for corrections, the requests appear on the web portal under correction requests. As the new request has been made, a red count appear in the side navigating tab and a rot dot appears beside the new correction request on it's landing page.  </p>
-<p>When there are no correction requests submitted by the lead. The information in table appears as blank with no records as seen in the image.<img alt="alt text" src="../image-110.png" /></p>
+<p>When there are no correction requests submitted by the lead. "Message when there is no information to display is based on status; For no [Pending Corrections, Corrections Made, Corrections Denied]. The information in table appears as blank with no records as seen in the image.<img alt="alt text" src="../image-110.png" /></p>
 <p>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page such as to make a correction. Below are the widgets &amp; landing page information as it appears on the landing page</p>
 <ol>
 <li>Search - search bars which throws result for the below two functions.<ul>
@@ -2567,9 +2620,24 @@ Quick Hands Logistics&quot;
 <li>If no information is available, then no records will be shown</li>
 </ul>
 </li>
+<li>TThe hierarchy followed for information in listing is<ul>
+<li>Work Date - chronological order </li>
+<li>Customer - alphabetical order </li>
+<li>Building - alphabetical order </li>
+<li>Shift - Day, Swing, Night</li>
+<li>Department - Operations, Receiving, Shipping</li>
+<li>Lead - alphabetical order</li>
+<li>Correction for - alphabetical order</li>
+</ul>
+</li>
 <li>The page is divided based on their status into three sections which are as followed and shown in the image with following columns for all.<img alt="alt text" src="../image-117.png" /><ul>
 <li>Work date - when the work has been completed by lead on the container. Used abbreviated month name</li>
-<li>Request Made - When the request has been made by lead</li>
+<li>Second column changes based on status<ul>
+<li>Pending correction: Request Made- When the request has been made by lead</li>
+<li>Corrections Made: Approved On - When the correction were submitted</li>
+<li>Correction Denied: Not Approved On - When the correction request was denied</li>
+</ul>
+</li>
 <li>Customer - Customer name</li>
 <li>Building - Building Name</li>
 <li>Shift - Shift of the building</li>
@@ -2609,11 +2677,14 @@ Quick Hands Logistics&quot;
 </li>
 </ul>
 </li>
-<li>Pending Correction: with the count of pending requests for whom no action is taken. When lead requests for correction, it comes under this section</li>
+<li>Pending Correction: with the count of pending requests for whom no action is taken. When lead requests for correction, it comes under this section<ul>
+<li>Request in 'Correction Made' and 'Correction Denied' tables should display for 14 days from when request was approved/denied.</li>
+</ul>
+</li>
 <li>Correction Made: with the count of requests for whom action is taken &amp; submitted. When admin or DM makes the desired correction as stated by lead, then after submission requests move to this section. <ul>
 <li>Once clicked on the edit button, redirect us to the make correction page. <img alt="alt text" src="../image-115.png" /><ul>
 <li>As you click on the 'i' button beside the title, a informative pop up opens which gives a snippet of the page on how to make a correction.            </li>
-<li>In the first section building info appears with building name, address &amp; associated main lead, customer and its contacts name, shift &amp; shift timings and work date.</li>
+<li>In the first section building info appears with building name, address &amp; associated main lead, customer and its contacts name, shift &amp; shift timings and work date. Only the contacts that have a permission for the corresponding building appears</li>
 <li>In the second section employee information appears with the name, employee and signature in the title of the table followed by columnar information of status, Type, Container Parameters and notes for customer</li>
 <li>In the third section, information entered by the lead while creating a request is shown</li>
 </ul>
@@ -2625,7 +2696,54 @@ Quick Hands Logistics&quot;
 </ul>
 </li>
 <li>Denied Corrections: with the count of requests which were denied by Admin or DM. </li>
+<li>
+<p>Lead gets an email notification after a correction request is approved or denied. </p>
+<pre><code>From:           QHL  Support
+Subject:       Correction Request Update
+</code></pre>
+<hr />
+<pre><code>Hi [Lead's First Name],
+
+Your correction request was Approved.
+
+DETAILS
+Work Date:                       Thursday, May 6, 2021
+Container:                         Outbound;  abcdekmlm 1                        (this is container type &amp; #)
+</code></pre>
+<hr />
+<pre><code>If approve show all corrections made: 
+CORRECTIONS
+Container Number:        Before:  abcdek222 M                          Correction: abcdekmlm 1  
+Cases:                                 Before:  1000                                         Correction: 2222 
+Reminder: Please ensure  lumper's Work Done is updated as well. (This message appears only when cases is edited)
+
+Weight:                               Before: 52                                              Correction: 30
+</code></pre>
+<hr />
+<pre><code>Thanks,
+Quick Hands Logistics
+</code></pre>
+</li>
+<li>
+<p>If the correction request is not approved, the following email notification is shared
+        From:         QHL  Support
+        Subject:       Correction Request Update</p>
+</li>
 </ol>
+<hr />
+<pre><code>    Hi [Lead's First Name],
+
+    Your correction request was Not Approved.
+
+    What is the Correction?
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</code></pre>
+<hr />
+<pre><code>    Please contact your DM if you have any questions or concerns.
+
+    Thanks,
+    Quick Hands Logistics
+</code></pre>
 <hr /></div>
             </div>
         </div>
